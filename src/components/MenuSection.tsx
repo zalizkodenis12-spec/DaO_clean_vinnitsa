@@ -71,7 +71,7 @@ export default function MenuSection() {
         <div className="mt-16 md:mt-24">
           <a 
             href="#catalog" 
-            className="inline-block bg-[#E8F1FA] hover:bg-[#90C8FF] text-white px-10 py-4 rounded-full text-lg md:text-xl font-bold tracking-wide shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300"
+            className="inline-block bg-[#B0D8FF] hover:bg-[#90C8FF] text-white px-10 py-4 rounded-full text-lg md:text-xl font-bold tracking-wide shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300"
           >
             Дивитись ще
           </a>
