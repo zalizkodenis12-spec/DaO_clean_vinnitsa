@@ -30,7 +30,7 @@ export default function AboutSection() {
             transition={{ repeat: Infinity, duration: 15, ease: "linear" }}
             className="text-[16vw] md:text-[12vw] font-black uppercase tracking-tighter"
           >
-            ЗАТИШНО • НАТУРАЛЬНО • З ДУШЕЮ • СВІЖО • ЗАТИШНО • НАТУРАЛЬНО • 
+            ЧИСТО • НАДІЙНО • АКУРАТНО • ЧИСТО • НАДІЙНО • АКУРАТНО • 
           </motion.div>
         </div>
         <div className="absolute bottom-1/4 left-0 w-full flex whitespace-nowrap opacity-10 rotate-2 scale-110">
@@ -39,7 +39,7 @@ export default function AboutSection() {
             transition={{ repeat: Infinity, duration: 15, ease: "linear" }}
             className="text-[16vw] md:text-[12vw] font-black uppercase tracking-tighter"
           >
-            ЗАТИШНО • НАТУРАЛЬНО • З ДУШЕЮ • СВІЖО • ЗАТИШНО • НАТУРАЛЬНО • 
+            ЧИСТО • НАДІЙНО • АКУРАТНО • ЧИСТО • НАДІЙНО • АКУРАТНО • 
           </motion.div>
         </div>
       </div>
@@ -54,8 +54,7 @@ export default function AboutSection() {
         >
           <h2 className="text-5xl md:text-8xl font-serif font-bold mb-6 md:mb-8 drop-shadow-sm">Хто ми такі?</h2>
           <p className="text-xl md:text-3xl font-medium max-w-4xl mx-auto leading-relaxed mb-8 md:mb-24">
-            Ми — невелика команда, яка вірить що кава й десерти можуть бути частиною теплих спогадів. 
-            Готуємо так, щоб кожна чашка нагадувала смак дитинства — просто, затишно, з душею.
+            Ми — команда професіоналів, яка знає як повернути речам вигляд як новий. Працюємо з делікатними тканинами, шкірою та меблями так, щоб кожна річ була в безпечних руках.
           </p>
         </motion.div>
 
@@ -82,11 +81,11 @@ export default function AboutSection() {
               <div className="flex flex-col items-center text-center group h-full cursor-grab active:cursor-grabbing px-2 py-4">
                 <div className="w-28 h-28 rounded-full border-4 border-[#E8F1FA] flex items-center justify-center mb-6 group-hover:bg-[#E8F1FA] group-hover:text-[#0158C4] transition-colors duration-300">
                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-12 h-12">
-                     <path strokeLinecap="round" strokeLinejoin="round" d="M17 8h1a4 4 0 1 1 0 8h-1M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"/><path strokeLinecap="round" strokeLinejoin="round" d="M6 2v2M10 2v2M14 2v2"/>
+                     <path strokeLinecap="round" strokeLinejoin="round" d="M12 21a7.5 7.5 0 0 0 7.5-7.5C19.5 9.141 12 2.25 12 2.25S4.5 9.141 4.5 13.5A7.5 7.5 0 0 0 12 21Z" />
                    </svg>
                 </div>
-                <h3 className="text-3xl font-bold mb-4 font-serif">Свіжа обсмажка</h3>
-                <p className="text-xl opacity-80 font-medium">Кавові зерна обсмажуємо самі, щодня свіжа партія.</p>
+                <h3 className="text-3xl font-bold mb-4 font-serif">Професійне обладнання</h3>
+                <p className="text-xl opacity-80 font-medium">Використовуємо сучасну техніку та сертифіковану хімію для якісного результату.</p>
               </div>
             </SwiperSlide>
             
@@ -95,11 +94,11 @@ export default function AboutSection() {
               <div className="flex flex-col items-center text-center group h-full cursor-grab active:cursor-grabbing px-2 py-4">
                 <div className="w-28 h-28 rounded-full border-4 border-[#E8F1FA] flex items-center justify-center mb-6 group-hover:bg-[#E8F1FA] group-hover:text-[#0158C4] transition-colors duration-300">
                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-12 h-12">
-                     <path strokeLinecap="round" strokeLinejoin="round" d="m4.6 13.4-.9 5.9a2.1 2.1 0 0 0 2.5 2.4l5.8-1.5a2.1 2.1 0 0 1 1.2 0l5.8 1.5a2.1 2.1 0 0 0 2.5-2.4l-.9-5.9a2.1 2.1 0 0 0-1.2-1.5l-4.2-1.8a2.1 2.1 0 0 1-1-1.1l-1.5-4.3a2.1 2.1 0 0 0-4 0l-1.5 4.3a2.1 2.1 0 0 1-1 1.1l-4.2 1.8a2.1 2.1 0 0 0-1.2 1.5Z"/>
+                     <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 18.75a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 0 1-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 0 0-3.213-9.193 2.056 2.056 0 0 0-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 0 0-10.026 0 1.106 1.106 0 0 0-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12" />
                    </svg>
                 </div>
-                <h3 className="text-3xl font-bold mb-4 font-serif">Домашня випічка</h3>
-                <p className="text-xl opacity-80 font-medium">Десерти готуємо щоранку за власними рецептами.</p>
+                <h3 className="text-3xl font-bold mb-4 font-serif">Виїзд за адресою</h3>
+                <p className="text-xl opacity-80 font-medium">Приїжджаємо самі — не треба нікуди возити меблі чи великі речі.</p>
               </div>
             </SwiperSlide>
 
@@ -108,11 +107,11 @@ export default function AboutSection() {
               <div className="flex flex-col items-center text-center group h-full cursor-grab active:cursor-grabbing px-2 py-4">
                 <div className="w-28 h-28 rounded-full border-4 border-[#E8F1FA] flex items-center justify-center mb-6 group-hover:bg-[#E8F1FA] group-hover:text-[#0158C4] transition-colors duration-300">
                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-12 h-12">
-                     <path strokeLinecap="round" strokeLinejoin="round" d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path strokeLinecap="round" strokeLinejoin="round" d="M9 22V12h6v10"/>
+                     <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
                    </svg>
                 </div>
-                <h3 className="text-3xl font-bold mb-4 font-serif">Затишна атмосфера</h3>
-                <p className="text-xl opacity-80 font-medium">Місце, де хочеться затриматись довше на чашку кави.</p>
+                <h3 className="text-3xl font-bold mb-4 font-serif">Гарантія результату</h3>
+                <p className="text-xl opacity-80 font-medium">Якщо результат не влаштує — доробимо безкоштовно.</p>
               </div>
             </SwiperSlide>
           </Swiper>
@@ -138,11 +137,11 @@ export default function AboutSection() {
           >
             <div className="w-28 h-28 rounded-full border-4 border-[#E8F1FA] flex items-center justify-center mb-6 group-hover:bg-[#E8F1FA] group-hover:text-[#0158C4] transition-colors duration-300">
                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-12 h-12">
-                 <path strokeLinecap="round" strokeLinejoin="round" d="M17 8h1a4 4 0 1 1 0 8h-1M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"/><path strokeLinecap="round" strokeLinejoin="round" d="M6 2v2M10 2v2M14 2v2"/>
+                 <path strokeLinecap="round" strokeLinejoin="round" d="M12 21a7.5 7.5 0 0 0 7.5-7.5C19.5 9.141 12 2.25 12 2.25S4.5 9.141 4.5 13.5A7.5 7.5 0 0 0 12 21Z" />
                </svg>
             </div>
-            <h3 className="text-3xl font-bold mb-4 font-serif">Свіжа обсмажка</h3>
-            <p className="text-xl opacity-80 font-medium">Кавові зерна обсмажуємо самі, щодня свіжа партія.</p>
+            <h3 className="text-3xl font-bold mb-4 font-serif">Професійне обладнання</h3>
+            <p className="text-xl opacity-80 font-medium">Використовуємо сучасну техніку та сертифіковану хімію для якісного результату.</p>
           </motion.div>
           
           {/* Feature 2 */}
@@ -155,11 +154,11 @@ export default function AboutSection() {
           >
             <div className="w-28 h-28 rounded-full border-4 border-[#E8F1FA] flex items-center justify-center mb-6 group-hover:bg-[#E8F1FA] group-hover:text-[#0158C4] transition-colors duration-300">
                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-12 h-12">
-                 <path strokeLinecap="round" strokeLinejoin="round" d="m4.6 13.4-.9 5.9a2.1 2.1 0 0 0 2.5 2.4l5.8-1.5a2.1 2.1 0 0 1 1.2 0l5.8 1.5a2.1 2.1 0 0 0 2.5-2.4l-.9-5.9a2.1 2.1 0 0 0-1.2-1.5l-4.2-1.8a2.1 2.1 0 0 1-1-1.1l-1.5-4.3a2.1 2.1 0 0 0-4 0l-1.5 4.3a2.1 2.1 0 0 1-1 1.1l-4.2 1.8a2.1 2.1 0 0 0-1.2 1.5Z"/>
+                 <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 18.75a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 0 1-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 0 0-3.213-9.193 2.056 2.056 0 0 0-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 0 0-10.026 0 1.106 1.106 0 0 0-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12" />
                </svg>
             </div>
-            <h3 className="text-3xl font-bold mb-4 font-serif">Домашня випічка</h3>
-            <p className="text-xl opacity-80 font-medium">Десерти готуємо щоранку за власними рецептами.</p>
+            <h3 className="text-3xl font-bold mb-4 font-serif">Виїзд за адресою</h3>
+            <p className="text-xl opacity-80 font-medium">Приїжджаємо самі — не треба нікуди возити меблі чи великі речі.</p>
           </motion.div>
 
           {/* Feature 3 */}
@@ -172,11 +171,11 @@ export default function AboutSection() {
           >
             <div className="w-28 h-28 rounded-full border-4 border-[#E8F1FA] flex items-center justify-center mb-6 group-hover:bg-[#E8F1FA] group-hover:text-[#0158C4] transition-colors duration-300">
                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-12 h-12">
-                 <path strokeLinecap="round" strokeLinejoin="round" d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path strokeLinecap="round" strokeLinejoin="round" d="M9 22V12h6v10"/>
+                 <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
                </svg>
             </div>
-            <h3 className="text-3xl font-bold mb-4 font-serif">Затишна атмосфера</h3>
-            <p className="text-xl opacity-80 font-medium">Місце, де хочеться затриматись довше на чашку кави.</p>
+            <h3 className="text-3xl font-bold mb-4 font-serif">Гарантія результату</h3>
+            <p className="text-xl opacity-80 font-medium">Якщо результат не влаштує — доробимо безкоштовно.</p>
           </motion.div>
         </div>
       </div>
