@@ -101,7 +101,7 @@ export default function ReviewsSection() {
                     
                     <div className="relative z-10">
                       <h4 className="text-2xl font-bold font-serif text-[#000000]">{review.name}</h4>
-                      <p className="text-[#000000] font-bold uppercase tracking-widest text-sm mt-2">{review.role}</p>
+                      <p className="text-[#0158C4] font-bold uppercase tracking-widest text-sm mt-2">{review.role}</p>
                     </div>
                     
                     {/* Quote icon background decoration */}
@@ -143,7 +143,7 @@ export default function ReviewsSection() {
               
               <div className="relative z-10">
                 <h4 className="text-2xl font-bold font-serif text-[#000000]">{review.name}</h4>
-                <p className="text-[#000000] font-bold uppercase tracking-widest text-sm mt-2">{review.role}</p>
+                <p className="text-[#0158C4] font-bold uppercase tracking-widest text-sm mt-2">{review.role}</p>
               </div>
               
               {/* Quote icon background decoration */}
