@@ -4,25 +4,25 @@ import { motion } from "framer-motion";
 
 export default function HistorySection() {
   return (
-    <section id="history" className="relative w-full bg-[#DBFBA9] z-10 flex flex-col md:flex-row">
+    <section id="history" className="relative w-full bg-[#E8F1FA] z-10 flex flex-col md:flex-row">
       
       {/* Left Side: Header Image (Sticky only on desktop) */}
       <div className="w-full md:w-1/2 h-[40vh] md:h-screen relative md:sticky top-0 bg-[#F9F9F9] flex flex-col items-center justify-center overflow-hidden">
         {/* Light background image */}
         <div className="absolute inset-0 opacity-60 bg-[url('/history-coffee-cup.png')] bg-cover bg-center"></div>
-        <div className="absolute inset-0 bg-[#DBFBA9]/70"></div>
+        <div className="absolute inset-0 bg-[#E8F1FA]/70"></div>
         
         <h2 className="text-5xl md:text-8xl font-serif font-bold text-[#0B0C10] relative z-10 text-center mb-4 md:mb-6 drop-shadow-sm px-4">
           Наша Історія
         </h2>
-        <div className="w-16 md:w-24 h-1 bg-[#7BA341] relative z-10 mb-4 md:mb-6"></div>
+        <div className="w-16 md:w-24 h-1 bg-[#0158C4] relative z-10 mb-4 md:mb-6"></div>
         <p className="text-[#0B0C10]/80 text-lg md:text-2xl font-medium relative z-10 font-sans text-center px-8">
           Як з'явилась AliRo
         </p>
       </div>
 
       {/* Right Side: Scrolling Content */}
-      <div className="w-full md:w-1/2 bg-[#DBFBA9] flex flex-col py-16 md:py-[20vh] px-6 md:px-24">
+      <div className="w-full md:w-1/2 bg-[#E8F1FA] flex flex-col py-16 md:py-[20vh] px-6 md:px-24">
         
         <motion.div 
           initial={{ opacity: 0, y: 50 }}
@@ -30,9 +30,9 @@ export default function HistorySection() {
           viewport={{ once: false, margin: "-20% 0px -20% 0px" }}
           className="mb-16 md:mb-[25vh]"
         >
-          <span className="text-[#7BA341] font-bold text-xl md:text-2xl tracking-widest uppercase mb-2 md:mb-4 block">2023</span>
-          <h3 className="text-3xl md:text-5xl font-serif font-bold text-[#0B0C10] mb-4 md:mb-6 leading-tight">Ідея за чашкою кави</h3>
-          <p className="text-lg md:text-xl text-[#0B0C10]/80 leading-relaxed font-medium">
+          <span className="text-[#0158C4] font-bold text-xl md:text-2xl tracking-widest uppercase mb-2 md:mb-4 block">2023</span>
+          <h3 className="text-3xl md:text-5xl font-serif font-bold text-[#FFFFFF] mb-4 md:mb-6 leading-tight">Ідея за чашкою кави</h3>
+          <p className="text-lg md:text-xl text-[#FFFFFF] leading-relaxed font-medium">
             Все почалося з простої думки — у Вінниці не вистачало місця, куди хочеться приходити знову. Не просто кав'ярні, а місця що нагадує смак дитинства і тепло рідного дому.
           </p>
         </motion.div>
@@ -43,9 +43,9 @@ export default function HistorySection() {
           viewport={{ once: false, margin: "-20% 0px -20% 0px" }}
           className="mb-16 md:mb-[25vh]"
         >
-          <span className="text-[#7BA341] font-bold text-xl md:text-2xl tracking-widest uppercase mb-2 md:mb-4 block">2024</span>
-          <h3 className="text-3xl md:text-5xl font-serif font-bold text-[#0B0C10] mb-4 md:mb-6 leading-tight">Перші двері AliRo</h3>
-          <p className="text-lg md:text-xl text-[#0B0C10]/80 leading-relaxed font-medium">
+          <span className="text-[#0158C4] font-bold text-xl md:text-2xl tracking-widest uppercase mb-2 md:mb-4 block">2024</span>
+          <h3 className="text-3xl md:text-5xl font-serif font-bold text-[#FFFFFF] mb-4 md:mb-6 leading-tight">Перші двері AliRo</h3>
+          <p className="text-lg md:text-xl text-[#FFFFFF] leading-relaxed font-medium">
             Ми відкрили невеличку кав'ярню на Вишенці. Без пафосу, без зайвого — тільки свіжа кава, домашня випічка і атмосфера в якій хочеться затриматись. Перші гості стали друзями закладу.
           </p>
         </motion.div>
@@ -56,9 +56,9 @@ export default function HistorySection() {
           viewport={{ once: false, margin: "-20% 0px -20% 0px" }}
           className="mb-8 md:mb-[10vh]"
         >
-          <span className="text-[#7BA341] font-bold text-xl md:text-2xl tracking-widest uppercase mb-2 md:mb-4 block">Сьогодні</span>
-          <h3 className="text-3xl md:text-5xl font-serif font-bold text-[#0B0C10] mb-4 md:mb-6 leading-tight">Місце для всієї родини</h3>
-          <p className="text-lg md:text-xl text-[#0B0C10]/80 leading-relaxed font-medium">
+          <span className="text-[#0158C4] font-bold text-xl md:text-2xl tracking-widest uppercase mb-2 md:mb-4 block">Сьогодні</span>
+          <h3 className="text-3xl md:text-5xl font-serif font-bold text-[#FFFFFF] mb-4 md:mb-6 leading-tight">Місце для всієї родини</h3>
+          <p className="text-lg md:text-xl text-[#FFFFFF] leading-relaxed font-medium">
             AliRo стала тим самим затишним куточком Вінниці, куди приходять цілими родинами. Ми й далі шукаємо найкращі зерна, печемо десерти щоранку і бережемо ту саму домашню атмосферу з першого дня.
           </p>
         </motion.div>
