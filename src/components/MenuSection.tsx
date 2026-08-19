@@ -3,11 +3,16 @@
 import { useState } from "react";
 import BurgerModal from "./BurgerModal";
 
-const COFFEES = [
-  { id: 1, name: "Еспресо", price: "45 ₴" },
-  { id: 2, name: "Американо", price: "55 ₴" },
-  { id: 3, name: "Капучино", price: "75 ₴" },
-  { id: 4, name: "Лате", price: "85 ₴" },
+const SERVICES = [
+  { id: 1, name: "Чистка одягу" },
+  { id: 2, name: "Чистка килимів" },
+  { id: 3, name: "Чистка м'яких меблів" },
+  { id: 4, name: "Чистка штор і текстилю" },
+  { id: 5, name: "Чистка шкіри та хутра" },
+  { id: 6, name: "Прасування та відпарювання" },
+  { id: 7, name: "Чистка подушок і ковдр" },
+  { id: 8, name: "Виведення плям" },
+  { id: 9, name: "Експрес-чистка" },
 ];
 
 export default function MenuSection() {
@@ -48,9 +53,9 @@ export default function MenuSection() {
           Ознайомтеся з меню DaO Clean
         </h2>
         
-        {/* 2 columns grid for both mobile and desktop */}
-        <div className="grid grid-cols-2 gap-x-4 md:gap-x-12 gap-y-12 md:gap-y-16">
-          {COFFEES.map((item) => (
+        {/* 2 columns on mobile, 3 columns on desktop */}
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-x-4 md:gap-x-12 gap-y-12 md:gap-y-16">
+          {SERVICES.map((item) => (
             <div 
               key={item.id}
               className="group flex flex-col items-center"
@@ -63,9 +68,6 @@ export default function MenuSection() {
               <h3 className="text-sm sm:text-lg md:text-4xl font-bold text-white transition-colors leading-tight text-center px-1">
                 {item.name}
               </h3>
-              <p className="text-xs sm:text-base md:text-3xl font-medium text-white/80 mt-1 md:mt-2">
-                {item.price}
-              </p>
             </div>
           ))}
         </div>
