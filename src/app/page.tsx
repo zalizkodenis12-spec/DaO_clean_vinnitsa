@@ -97,8 +97,38 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Hero Section - Solid Background */}
-      <div className="relative w-full h-[150vh] bg-[#E8F1FA] z-10">
+      {/* Hero Section */}
+      <div className="relative w-full min-h-[100vh] bg-[#E8F1FA] z-10 flex items-center overflow-hidden">
+        {/* Background image */}
+        <div
+          className="absolute inset-0 bg-[url('/hero-shirt.jpeg')] bg-cover bg-center bg-no-repeat"
+        />
+        {/* Overlay for text readability on left side */}
+        <div className="absolute inset-0 bg-gradient-to-r from-[#E8F1FA]/95 via-[#E8F1FA]/60 to-transparent" />
+
+        {/* Content */}
+        <div className="relative z-10 w-full max-w-7xl mx-auto px-6 md:px-16 pt-32 pb-16 flex flex-col items-start">
+          <h1 className="text-5xl md:text-7xl xl:text-8xl font-serif font-bold text-[#000000] leading-tight mb-6 max-w-xl">
+            Ваші речі заслуговують на чистоту
+          </h1>
+          <p className="text-lg md:text-2xl text-[#000000]/70 font-medium mb-10 max-w-md leading-relaxed">
+            Виїзна хімчистка меблів, килимів та одягу у Вінниці. Приїжджаємо — і повертаємо речі як нові.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4">
+            <a
+              href="#contacts"
+              className="inline-block bg-[#0158C4] hover:bg-[#013A80] text-white px-8 py-4 rounded-full text-lg font-bold shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300"
+            >
+              Залишити заявку
+            </a>
+            <a
+              href="tel:+380679009315"
+              className="inline-block bg-white/80 hover:bg-white text-[#0158C4] border-2 border-[#0158C4] px-8 py-4 rounded-full text-lg font-bold shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+            >
+              067 900 9315
+            </a>
+          </div>
+        </div>
       </div>
 
       {/* The new Menu Section that slides up after the animation finishes */}
