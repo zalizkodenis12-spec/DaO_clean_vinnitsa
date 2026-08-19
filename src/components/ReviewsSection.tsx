@@ -85,7 +85,7 @@ export default function ReviewsSection() {
             {[...REVIEWS, ...REVIEWS].map((review, idx) => (
               <SwiperSlide key={idx}>
                 <div className="h-full cursor-grab active:cursor-grabbing px-2 py-4">
-                  <div className="bg-[#FFFFFF] backdrop-blur-xl border border-black/5 p-6 md:p-10 rounded-[2rem] shadow-xl hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 relative group flex flex-col justify-between h-full">
+                  <div className="bg-[#B0D8FF] backdrop-blur-xl border border-black/5 p-6 md:p-10 rounded-[2rem] shadow-xl hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 relative group flex flex-col justify-between h-full">
                     <div>
                       <div className="text-[#FFB800] mb-6 md:mb-8 flex gap-1">
                         {[...Array(review.rating)].map((_, i) => (
@@ -126,7 +126,7 @@ export default function ReviewsSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: idx * 0.15 }}
-              className="bg-[#FFFFFF] backdrop-blur-xl border border-black/5 p-10 rounded-[3rem] shadow-xl hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 relative group flex flex-col justify-between h-full"
+              className="bg-[#B0D8FF] backdrop-blur-xl border border-black/5 p-10 rounded-[3rem] shadow-xl hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 relative group flex flex-col justify-between h-full"
             >
               <div>
                 <div className="text-[#FFB800] mb-8 flex gap-1">
