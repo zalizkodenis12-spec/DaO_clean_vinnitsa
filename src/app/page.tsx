@@ -25,32 +25,11 @@ export default function Home() {
       <PageIntro />
       {/* Navbar — classic solid blue */}
       <div className="absolute top-0 left-0 w-full pt-4 pb-6 bg-[#0158C4] z-50">
-        <div className="relative z-10 flex items-center w-full px-6 md:px-16">
-          {/* Left Navigation Links */}
-          <div className="hidden md:flex flex-1 items-center justify-start gap-10 lg:gap-16 font-sans font-extrabold text-sm tracking-widest uppercase text-white">
-            <a href="#about" className="hover:text-gray-200 transition-colors cursor-pointer">Про нас</a>
-            <a href="#history" className="hover:text-gray-200 transition-colors cursor-pointer">Як ми працюємо</a>
-          </div>
-
-          {/* Logo (Center) */}
-          <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-3xl md:text-5xl font-bold text-white tracking-wider cursor-pointer">
-            <span>DaO Clean</span>
-          </div>
-
-          {/* Right Navigation Links */}
-          <div className="hidden md:flex flex-1 items-center justify-end gap-10 lg:gap-16 font-sans font-extrabold text-sm tracking-widest uppercase text-white">
-            <a href="#menu" className="hover:text-gray-200 transition-colors cursor-pointer">Послуги</a>
-            <a href="#reviews" className="hover:text-gray-200 transition-colors cursor-pointer">Відгуки</a>
-            <button onClick={() => setIsCartOpen(true)} className="hover:text-gray-200 transition-colors cursor-pointer" aria-label="Кошик">
-              <svg xmlns="http://www.w3.org/2000/svg" className="w-9 h-9" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
-              </svg>
-            </button>
-          </div>
-
-          {/* Mobile Hamburger Icon */}
+        <div className="relative z-10 flex items-center justify-between w-full px-6 md:px-16">
+          
+          {/* Mobile Hamburger Icon (Left on mobile) */}
           <button
-            className="md:hidden flex items-center justify-center p-2 text-white z-[60] relative"
+            className="md:hidden flex items-center justify-center p-2 -ml-2 text-white z-[60] relative"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -62,16 +41,31 @@ export default function Home() {
             </svg>
           </button>
 
-          {/* Mobile Cart Icon */}
-          <button
-            className="md:hidden ml-auto flex items-center justify-center p-2 text-white z-[60] relative"
-            onClick={() => setIsCartOpen(true)}
-            aria-label="Кошик"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
-            </svg>
-          </button>
+          {/* Logo (Center on mobile, Left on desktop) */}
+          <div className="absolute md:static left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 md:translate-x-0 md:translate-y-0 md:flex-1 flex justify-start text-3xl md:text-5xl font-bold text-white tracking-wider cursor-pointer z-50">
+            <span>DaO Clean</span>
+          </div>
+
+          {/* Desktop Navigation Links (Center) */}
+          <div className="hidden md:flex flex-none items-center justify-center gap-8 lg:gap-14 font-sans font-extrabold text-sm tracking-widest uppercase text-white">
+            <a href="#about" className="hover:text-gray-200 transition-colors cursor-pointer">Про нас</a>
+            <a href="#history" className="hover:text-gray-200 transition-colors cursor-pointer">Як ми працюємо</a>
+            <a href="#menu" className="hover:text-gray-200 transition-colors cursor-pointer">Послуги</a>
+            <a href="#reviews" className="hover:text-gray-200 transition-colors cursor-pointer">Відгуки</a>
+          </div>
+
+          {/* Cart Icon (Right for both mobile and desktop) */}
+          <div className="flex flex-1 items-center justify-end z-[60] relative">
+            <button
+              className="flex items-center justify-center p-2 -mr-2 text-white hover:text-gray-200 transition-colors cursor-pointer"
+              onClick={() => setIsCartOpen(true)}
+              aria-label="Кошик"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" className="w-7 h-7 md:w-9 md:h-9" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+              </svg>
+            </button>
+          </div>
         </div>
 
         {/* Mobile Dropdown Menu */}
