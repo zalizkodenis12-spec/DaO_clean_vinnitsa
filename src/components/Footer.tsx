@@ -71,8 +71,8 @@ export default function Footer() {
       </div>
       
       <div className="w-full flex justify-center mt-8 md:mt-16 relative z-10 px-6">
-        <p className="text-white font-black text-sm md:text-xl bg-[#0264D9] px-6 py-3 md:px-8 md:py-4 rounded-xl md:rounded-2xl inline-block shadow-md text-center">
-          Цілодобово
+        <p className="text-white font-black text-sm md:text-xl bg-[#0264D9] px-6 py-3 md:px-8 md:py-4 rounded-xl md:rounded-2xl inline-block shadow-md text-center tracking-wide">
+          Працюємо 24/7
         </p>
       </div>
 
