@@ -27,7 +27,7 @@ export default function Home() {
       <div className="absolute top-0 left-0 w-full pt-4 pb-6 bg-[#0158C4] z-50">
         <div className="relative z-10 flex items-center w-full px-6 md:px-16">
           {/* Left Navigation Links */}
-          <div className="hidden md:flex flex-1 items-center justify-between pr-12 lg:pr-32 font-sans font-extrabold text-sm tracking-widest uppercase text-white">
+          <div className="hidden md:flex flex-1 items-center justify-end gap-10 pr-16 font-sans font-extrabold text-sm tracking-widest uppercase text-white">
             <a href="#about" className="hover:text-gray-200 transition-colors cursor-pointer">Про нас</a>
             <a href="#history" className="hover:text-gray-200 transition-colors cursor-pointer">Як ми працюємо</a>
           </div>
@@ -38,7 +38,7 @@ export default function Home() {
           </div>
 
           {/* Right Navigation Links */}
-          <div className="hidden md:flex flex-1 items-center justify-between pl-12 lg:pl-32 font-sans font-extrabold text-sm tracking-widest uppercase text-white">
+          <div className="hidden md:flex flex-1 items-center justify-start gap-10 pl-16 font-sans font-extrabold text-sm tracking-widest uppercase text-white">
             <a href="#menu" className="hover:text-gray-200 transition-colors cursor-pointer">Послуги</a>
             <a href="#reviews" className="hover:text-gray-200 transition-colors cursor-pointer">Відгуки</a>
             <button onClick={() => setIsCartOpen(true)} className="hover:text-gray-200 transition-colors cursor-pointer" aria-label="Кошик">
