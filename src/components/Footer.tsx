@@ -41,7 +41,7 @@ export default function Footer() {
               </a>
             </p>
             <p className="text-[#FFFFFF]/90 mb-4 md:mb-6 text-xs md:text-xl flex items-center gap-2 font-semibold">
-              <span className="text-base md:text-2xl">📞</span> 067 900 9315
+              <span className="text-base md:text-2xl">📞</span> <a href="tel:+380679009315" className="hover:underline">067 900 9315</a>
             </p>
           </div>
 
@@ -72,7 +72,7 @@ export default function Footer() {
       
       <div className="w-full flex justify-center mt-8 md:mt-16 relative z-10 px-6">
         <p className="text-white font-black text-sm md:text-xl bg-[#0264D9] px-6 py-3 md:px-8 md:py-4 rounded-xl md:rounded-2xl inline-block shadow-md text-center">
-          Пн–Нд: 10:00–21:00
+          Цілодобово
         </p>
       </div>
 
