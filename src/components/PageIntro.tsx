@@ -27,11 +27,11 @@ export default function PageIntro() {
             className="relative h-full bg-[#0158C4]"
             style={{ width: "50%" }}
           >
-            {/* Vertical wave extending exactly 60px to the right of the center */}
-            <div className="absolute top-0 right-[-60px] h-full w-[120px]">
-              <svg viewBox="0 0 120 1000" preserveAspectRatio="none" className="w-full h-full">
+            {/* Vertical wave matching the sketch exactly (1.5 cycles, deep swoops) */}
+            <div className="absolute top-0 right-[-100px] h-full w-[200px]">
+              <svg viewBox="0 0 400 1000" preserveAspectRatio="none" className="w-full h-full">
                 <path
-                  d="M60,0 C120,60 120,140 60,200 C0,260 0,340 60,400 C120,460 120,540 60,600 C0,660 0,740 60,800 C120,860 120,940 60,1000 L0,1000 L0,0 Z"
+                  d="M200,0 C0,111 0,222 200,333 C400,444 400,555 200,667 C0,778 0,889 200,1000 L0,1000 L0,0 Z"
                   fill="#0158C4"
                 />
               </svg>
@@ -45,11 +45,11 @@ export default function PageIntro() {
             className="relative h-full bg-[#0158C4]"
             style={{ width: "50%" }}
           >
-            {/* Vertical wave extending exactly 60px to the left of the center */}
-            <div className="absolute top-0 left-[-60px] h-full w-[120px]">
-              <svg viewBox="0 0 120 1000" preserveAspectRatio="none" className="w-full h-full">
+            {/* Vertical wave matching the sketch exactly */}
+            <div className="absolute top-0 left-[-100px] h-full w-[200px]">
+              <svg viewBox="0 0 400 1000" preserveAspectRatio="none" className="w-full h-full">
                 <path
-                  d="M60,0 C120,60 120,140 60,200 C0,260 0,340 60,400 C120,460 120,540 60,600 C0,660 0,740 60,800 C120,860 120,940 60,1000 L120,1000 L120,0 Z"
+                  d="M200,0 C0,111 0,222 200,333 C400,444 400,555 200,667 C0,778 0,889 200,1000 L400,1000 L400,0 Z"
                   fill="#0158C4"
                 />
               </svg>
