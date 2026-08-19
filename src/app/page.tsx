@@ -1,6 +1,7 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 
 import MenuSection from "@/components/MenuSection";
 import HistorySection from "@/components/HistorySection";
@@ -12,6 +13,11 @@ import CartSidebar from "@/components/CartSidebar";
 export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isCartOpen, setIsCartOpen] = useState(false);
+
+  // Scroll to top on page load
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "instant" });
+  }, []);
 
   return (
     <main className="relative w-full bg-white">
@@ -81,10 +87,6 @@ export default function Home() {
             <a href="#contacts" onClick={() => setIsMenuOpen(false)} className="hover:text-[#0158C4] transition-colors">Контакти</a>
           </div>
         )}
-      </div>
-          </svg>
-        </div>
-      </div>
 
       {/* Hero Section */}
       <div className="relative w-full min-h-[120vh] bg-[#E8F1FA] z-10 flex items-center overflow-hidden">

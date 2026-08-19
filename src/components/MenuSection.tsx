@@ -1,7 +1,6 @@
 "use client";
 
-import { useState } from "react";
-import BurgerModal from "./BurgerModal";
+import { motion } from "framer-motion";
 
 const SERVICES = [
   { id: 1, name: "Чистка одягу" },
@@ -44,26 +43,38 @@ export default function MenuSection() {
       </div>
 
       <div className="max-w-5xl mx-auto px-6 pt-16 md:pt-24 text-center relative z-10">
-        <h2 className="text-5xl md:text-8xl font-extrabold text-white mb-12 md:mb-16 tracking-wide drop-shadow-md">
+
+        {/* Animated heading */}
+        <motion.h2
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-80px" }}
+          transition={{ duration: 0.7 }}
+          className="text-5xl md:text-8xl font-extrabold text-white mb-12 md:mb-16 tracking-wide drop-shadow-md"
+        >
           Ознайомтеся з послугами DaO Clean
-        </h2>
-        
+        </motion.h2>
+
         {/* 2 columns grid for both mobile and desktop */}
         <div className="grid grid-cols-2 gap-x-4 md:gap-x-12 gap-y-12 md:gap-y-16">
-          {SERVICES.map((item) => (
-            <div 
+          {SERVICES.map((item, idx) => (
+            <motion.div
               key={item.id}
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-60px" }}
+              transition={{ duration: 0.6, delay: idx * 0.12 }}
               className="group flex flex-col items-center"
             >
               {/* Light blue placeholder */}
               <div className="w-full aspect-square bg-[#E8F1FA] rounded-3xl shadow-lg mb-4 md:mb-6 transition-transform duration-500 group-hover:scale-105 group-hover:shadow-2xl">
               </div>
-              
+
               {/* Text Info */}
               <h3 className="text-sm sm:text-lg md:text-4xl font-bold text-white transition-colors leading-tight text-center px-1">
                 {item.name}
               </h3>
-            </div>
+            </motion.div>
           ))}
         </div>
 
