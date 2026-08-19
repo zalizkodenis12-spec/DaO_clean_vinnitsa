@@ -8,8 +8,10 @@ export default function PageIntro() {
   const [visible, setVisible] = useState(true);
 
   useEffect(() => {
-    const t1 = setTimeout(() => setSplitting(true), 800);
-    const t2 = setTimeout(() => setVisible(false), 3200);
+    // Start split after 0.7s
+    const t1 = setTimeout(() => setSplitting(true), 700);
+    // Remove from DOM after animation fully ends
+    const t2 = setTimeout(() => setVisible(false), 2600);
     return () => { clearTimeout(t1); clearTimeout(t2); };
   }, []);
 
@@ -17,35 +19,57 @@ export default function PageIntro() {
     <AnimatePresence>
       {visible && (
         <div className="fixed inset-0 z-[999] overflow-hidden pointer-events-none">
-          {/* Top half */}
+
+          {/* LEFT half — slides out to the LEFT */}
           <motion.div
-            animate={splitting ? { y: "-100%" } : { y: 0 }}
-            transition={{ duration: 1.6, ease: [0.76, 0, 0.24, 1], delay: 0.2 }}
-            className="absolute top-0 left-0 w-full bg-[#0158C4]"
-            style={{ height: "55%" }}
+            animate={splitting ? { x: "-100%" } : { x: 0 }}
+            transition={{ duration: 1.4, ease: [0.76, 0, 0.24, 1], delay: 0.1 }}
+            className="absolute top-0 left-0 h-full bg-[#0158C4]"
+            style={{ width: "50%" }}
           >
-            {/* Wavy bottom edge */}
-            <div className="absolute bottom-0 left-0 w-full translate-y-full" style={{ height: 80 }}>
-              <svg viewBox="0 0 1200 80" preserveAspectRatio="none" className="w-full h-full">
-                <path d="M0,40 C300,80 900,0 1200,40 L1200,80 L0,80 Z" fill="#0158C4" />
+            {/* Vertical wave on the RIGHT edge, sticking out to the right */}
+            <div
+              className="absolute top-0 right-0 h-full"
+              style={{ width: 100, transform: "translateX(100%)" }}
+            >
+              <svg
+                viewBox="0 0 100 1000"
+                preserveAspectRatio="none"
+                style={{ width: "100%", height: "100%" }}
+              >
+                <path
+                  d="M0,0 C70,150 10,350 50,500 C90,650 10,800 0,1000 L0,1000 L0,0 Z"
+                  fill="#0158C4"
+                />
               </svg>
             </div>
           </motion.div>
 
-          {/* Bottom half */}
+          {/* RIGHT half — slides out to the RIGHT */}
           <motion.div
-            animate={splitting ? { y: "100%" } : { y: 0 }}
-            transition={{ duration: 1.6, ease: [0.76, 0, 0.24, 1], delay: 0.2 }}
-            className="absolute bottom-0 left-0 w-full bg-[#0158C4]"
-            style={{ height: "55%" }}
+            animate={splitting ? { x: "100%" } : { x: 0 }}
+            transition={{ duration: 1.4, ease: [0.76, 0, 0.24, 1], delay: 0.1 }}
+            className="absolute top-0 right-0 h-full bg-[#0158C4]"
+            style={{ width: "50%" }}
           >
-            {/* Wavy top edge */}
-            <div className="absolute top-0 left-0 w-full -translate-y-full" style={{ height: 80 }}>
-              <svg viewBox="0 0 1200 80" preserveAspectRatio="none" className="w-full h-full">
-                <path d="M0,40 C300,0 900,80 1200,40 L1200,0 L0,0 Z" fill="#0158C4" />
+            {/* Vertical wave on the LEFT edge, sticking out to the left */}
+            <div
+              className="absolute top-0 left-0 h-full"
+              style={{ width: 100, transform: "translateX(-100%)" }}
+            >
+              <svg
+                viewBox="0 0 100 1000"
+                preserveAspectRatio="none"
+                style={{ width: "100%", height: "100%" }}
+              >
+                <path
+                  d="M100,0 C30,150 90,350 50,500 C10,650 90,800 100,1000 L100,1000 L100,0 Z"
+                  fill="#0158C4"
+                />
               </svg>
             </div>
           </motion.div>
+
         </div>
       )}
     </AnimatePresence>
