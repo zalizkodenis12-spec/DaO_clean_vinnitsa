@@ -17,13 +17,14 @@ export default function CartSidebar({ isOpen, onClose }: CartSidebarProps) {
 
   const updateQty = (id: number, delta: number) => {
     setItems((prev) =>
-      prev.map((item) => {
-        if (item.id === id) {
-          const newQty = Math.max(1, item.qty + delta);
-          return { ...item, qty: newQty };
-        }
-        return item;
-      })
+      prev
+        .map((item) => {
+          if (item.id === id) {
+            return { ...item, qty: item.qty + delta };
+          }
+          return item;
+        })
+        .filter((item) => item.qty > 0)
     );
   };
 
@@ -105,7 +106,6 @@ export default function CartSidebar({ isOpen, onClose }: CartSidebarProps) {
                   <div key={item.id} className="bg-[#E8F1FA] rounded-2xl p-4 shadow-lg flex items-center gap-4">
                     {/* Placeholder for item image */}
                     <div className="w-16 h-16 bg-[#0158C4]/10 rounded-xl flex items-center justify-center shrink-0">
-                      <span className="text-2xl">✨</span>
                     </div>
                     
                     <div className="flex-1">
