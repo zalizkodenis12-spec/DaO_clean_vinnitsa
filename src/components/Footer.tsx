@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -64,8 +65,12 @@ export default function Footer() {
         </p>
       </div>
 
-      <div className="w-full text-center text-[#FFFFFF]/60 text-sm mt-12 md:mt-16 pt-8 border-t border-white/20 max-w-7xl mx-auto px-6 font-semibold">
-        © 2026 AliRo. Всі права захищено.
+      <div className="w-full flex flex-col md:flex-row justify-center items-center gap-2 md:gap-8 text-center text-[#FFFFFF]/60 text-sm mt-12 md:mt-16 pt-8 border-t border-white/20 max-w-7xl mx-auto px-6 font-semibold">
+        <span>© 2026 AliRo. Всі права захищено.</span>
+        <div className="flex gap-4 mt-2 md:mt-0">
+          <Link href="/privacy-policy" className="hover:text-white hover:underline transition-all">Політика конфіденційності</Link>
+          <Link href="/terms-of-use" className="hover:text-white hover:underline transition-all">Умови користування</Link>
+        </div>
       </div>
     </footer>
   );
