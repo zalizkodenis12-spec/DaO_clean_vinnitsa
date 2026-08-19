@@ -44,7 +44,7 @@ export default function MenuSection() {
       </div>
 
       <div className="max-w-5xl mx-auto px-6 pt-16 md:pt-24 text-center relative z-10">
-        <h2 className="text-5xl md:text-8xl font-extrabold text-[#000000] mb-12 md:mb-16 tracking-wide drop-shadow-md">
+        <h2 className="text-5xl md:text-8xl font-extrabold text-white mb-12 md:mb-16 tracking-wide drop-shadow-md">
           Ознайомтеся з меню AliRo
         </h2>
         
@@ -60,10 +60,10 @@ export default function MenuSection() {
               </div>
               
               {/* Text Info */}
-              <h3 className="text-sm sm:text-lg md:text-4xl font-bold text-[#000000] transition-colors leading-tight text-center px-1">
+              <h3 className="text-sm sm:text-lg md:text-4xl font-bold text-white transition-colors leading-tight text-center px-1">
                 {item.name}
               </h3>
-              <p className="text-xs sm:text-base md:text-3xl font-medium text-[#000000]/80 mt-1 md:mt-2">
+              <p className="text-xs sm:text-base md:text-3xl font-medium text-white/80 mt-1 md:mt-2">
                 {item.price}
               </p>
             </div>
@@ -74,7 +74,7 @@ export default function MenuSection() {
         <div className="mt-16 md:mt-24">
           <a 
             href="#catalog" 
-            className="inline-block bg-[#B0D8FF] hover:bg-[#90C8FF] text-[#000000] px-10 py-4 rounded-full text-lg md:text-xl font-bold tracking-wide shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300"
+            className="inline-block bg-[#B0D8FF] hover:bg-[#90C8FF] text-white px-10 py-4 rounded-full text-lg md:text-xl font-bold tracking-wide shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300"
           >
             Дивитись ще
           </a>
