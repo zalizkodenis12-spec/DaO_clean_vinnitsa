@@ -84,8 +84,8 @@ export default function AboutSection() {
                      <path strokeLinecap="round" strokeLinejoin="round" d="M12 21a7.5 7.5 0 0 0 7.5-7.5C19.5 9.141 12 2.25 12 2.25S4.5 9.141 4.5 13.5A7.5 7.5 0 0 0 12 21Z" />
                    </svg>
                 </div>
-                <h3 className="text-3xl font-bold mb-4 font-serif">Професійне обладнання</h3>
-                <p className="text-xl opacity-80 font-medium">Сучасна техніка та сертифікована хімія.</p>
+                <h3 className="text-3xl font-bold mb-4 font-serif">Сучасна техніка</h3>
+                <p className="text-xl opacity-80 font-medium">Використовуємо потужне обладнання та безпечну хімію для ідеального результату.</p>
               </div>
             </SwiperSlide>
             
@@ -140,8 +140,8 @@ export default function AboutSection() {
                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 21a7.5 7.5 0 0 0 7.5-7.5C19.5 9.141 12 2.25 12 2.25S4.5 9.141 4.5 13.5A7.5 7.5 0 0 0 12 21Z" />
                </svg>
             </div>
-            <h3 className="text-3xl font-bold mb-4 font-serif">Професійне обладнання</h3>
-            <p className="text-xl opacity-80 font-medium">Сучасна техніка та сертифікована хімія.</p>
+            <h3 className="text-3xl font-bold mb-4 font-serif">Сучасна техніка</h3>
+            <p className="text-xl opacity-80 font-medium">Використовуємо потужне обладнання та безпечну хімію для ідеального результату.</p>
           </motion.div>
           
           {/* Feature 2 */}
