@@ -140,13 +140,13 @@ export default function Home() {
           >
             <a
               href="#menu"
-              className="flex-1 sm:flex-none inline-block bg-[#0158C4] hover:bg-[#013A80] text-white px-2 sm:px-8 py-3 sm:py-4 rounded-full text-[13px] sm:text-lg font-bold shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 flex items-center justify-center sm:inline-block sm:text-center leading-tight"
+              className="flex-1 sm:flex-none inline-block bg-[#0158C4] hover:bg-[#013A80] text-white px-2 sm:px-12 py-3 sm:py-4 rounded-full text-[13px] sm:text-lg font-bold shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 flex items-center justify-center sm:inline-block sm:text-center leading-tight"
             >
               Проглянути послуги
             </a>
             <a
               href="tel:+380679009315"
-              className="flex-1 sm:flex-none inline-block bg-white/80 hover:bg-white text-[#0158C4] border-2 border-[#0158C4] px-2 sm:px-8 py-3 sm:py-4 rounded-full text-[13px] sm:text-lg font-bold shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex items-center justify-center sm:inline-block sm:text-center whitespace-nowrap leading-tight"
+              className="flex-1 sm:flex-none inline-block bg-white/80 hover:bg-white text-[#0158C4] border-2 border-[#0158C4] px-2 sm:px-12 py-3 sm:py-4 rounded-full text-[13px] sm:text-lg font-bold shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex items-center justify-center sm:inline-block sm:text-center whitespace-nowrap leading-tight"
             >
               067 900 9315
             </a>
