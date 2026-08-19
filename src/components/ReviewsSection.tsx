@@ -35,7 +35,7 @@ const BURGER_IMAGES = [
 
 export default function ReviewsSection() {
   return (
-    <section id="reviews" className="relative w-full bg-[#B0D8FF] z-10 py-16 md:py-32 overflow-hidden min-h-[90vh] flex flex-col justify-center">
+    <section id="reviews" className="relative w-full bg-[#E8F1FA] z-10 py-16 md:py-32 overflow-hidden min-h-[90vh] flex flex-col justify-center">
       
       {/* Infinite scrolling images in the background */}
       <div className="absolute top-1/2 left-0 w-full -translate-y-1/2 flex gap-8 opacity-[0.12] pointer-events-none scale-110">
@@ -85,7 +85,7 @@ export default function ReviewsSection() {
             {[...REVIEWS, ...REVIEWS].map((review, idx) => (
               <SwiperSlide key={idx}>
                 <div className="h-full cursor-grab active:cursor-grabbing px-2 py-4">
-                  <div className="bg-[#B0D8FF] backdrop-blur-xl border border-black/5 p-6 md:p-10 rounded-[2rem] shadow-xl hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 relative group flex flex-col justify-between h-full">
+                  <div className="bg-[#FFFFFF] backdrop-blur-xl border border-black/5 p-6 md:p-10 rounded-[2rem] shadow-xl hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 relative group flex flex-col justify-between h-full">
                     <div>
                       <div className="text-[#FFB800] mb-6 md:mb-8 flex gap-1">
                         {[...Array(review.rating)].map((_, i) => (
@@ -126,7 +126,7 @@ export default function ReviewsSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: idx * 0.15 }}
-              className="bg-[#B0D8FF] backdrop-blur-xl border border-black/5 p-10 rounded-[3rem] shadow-xl hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 relative group flex flex-col justify-between h-full"
+              className="bg-[#FFFFFF] backdrop-blur-xl border border-black/5 p-10 rounded-[3rem] shadow-xl hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 relative group flex flex-col justify-between h-full"
             >
               <div>
                 <div className="text-[#FFB800] mb-8 flex gap-1">
