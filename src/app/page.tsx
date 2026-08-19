@@ -32,7 +32,14 @@ export default function Home() {
           <div className="hidden md:flex flex-1 items-center justify-between pl-12 lg:pl-32 font-sans font-semibold text-sm tracking-widest uppercase text-white">
             <a href="#menu" className="hover:text-gray-200 transition-colors cursor-pointer">Меню</a>
             <a href="#reviews" className="hover:text-gray-200 transition-colors cursor-pointer">Відгуки</a>
-            <a href="#contacts" className="hover:text-gray-200 transition-colors cursor-pointer">Контакти</a>
+            <div className="flex items-center gap-6 xl:gap-8">
+              <a href="#contacts" className="hover:text-gray-200 transition-colors cursor-pointer">Контакти</a>
+              <button onClick={() => console.log("Cart clicked")} className="hover:text-gray-200 transition-colors cursor-pointer ml-2" aria-label="Кошик">
+                <svg xmlns="http://www.w3.org/2000/svg" className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                </svg>
+              </button>
+            </div>
           </div>
 
           {/* Mobile Hamburger Icon */}
@@ -46,6 +53,17 @@ export default function Home() {
               ) : (
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
               )}
+            </svg>
+          </button>
+
+          {/* Mobile Cart Icon */}
+          <button 
+            className="md:hidden ml-auto flex items-center justify-center p-2 text-white z-[60] relative"
+            onClick={() => console.log("Cart clicked")}
+            aria-label="Кошик"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
             </svg>
           </button>
         </div>
