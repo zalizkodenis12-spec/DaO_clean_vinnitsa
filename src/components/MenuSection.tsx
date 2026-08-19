@@ -8,11 +8,6 @@ const SERVICES = [
   { id: 2, name: "Чистка килимів" },
   { id: 3, name: "Чистка м'яких меблів" },
   { id: 4, name: "Чистка штор і текстилю" },
-  { id: 5, name: "Чистка шкіри та хутра" },
-  { id: 6, name: "Прасування та відпарювання" },
-  { id: 7, name: "Чистка подушок і ковдр" },
-  { id: 8, name: "Виведення плям" },
-  { id: 9, name: "Експрес-чистка" },
 ];
 
 export default function MenuSection() {
@@ -50,11 +45,11 @@ export default function MenuSection() {
 
       <div className="max-w-5xl mx-auto px-6 pt-16 md:pt-24 text-center relative z-10">
         <h2 className="text-5xl md:text-8xl font-extrabold text-white mb-12 md:mb-16 tracking-wide drop-shadow-md">
-          Ознайомтеся з меню DaO Clean
+          Ознайомтеся з послугами DaO Clean
         </h2>
         
-        {/* 2 columns on mobile, 3 columns on desktop */}
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-x-4 md:gap-x-12 gap-y-12 md:gap-y-16">
+        {/* 2 columns grid for both mobile and desktop */}
+        <div className="grid grid-cols-2 gap-x-4 md:gap-x-12 gap-y-12 md:gap-y-16">
           {SERVICES.map((item) => (
             <div 
               key={item.id}
