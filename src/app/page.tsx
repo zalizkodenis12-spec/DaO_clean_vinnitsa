@@ -25,7 +25,7 @@ export default function Home() {
       <PageIntro />
       {/* Navbar — classic solid blue */}
       <div className="absolute top-0 left-0 w-full pt-4 pb-6 bg-[#0158C4] z-50">
-        <div className="relative z-10 flex items-center justify-between w-full px-6 md:px-16">
+        <div className="relative z-10 flex items-center justify-between w-full max-w-[1400px] mx-auto px-6 md:px-16">
           
           {/* Mobile Hamburger Icon */}
           <button
@@ -42,21 +42,21 @@ export default function Home() {
           </button>
 
           {/* Desktop Left Navigation Links */}
-          <div className="hidden md:flex flex-1 items-center justify-start gap-8 lg:gap-12 font-sans font-extrabold text-sm tracking-widest uppercase text-white">
-            <a href="#menu" className="hover:text-gray-200 transition-colors cursor-pointer">Послуги</a>
-            <a href="#reviews" className="hover:text-gray-200 transition-colors cursor-pointer">Відгуки</a>
-            <a href="#contacts" className="hover:text-gray-200 transition-colors cursor-pointer">Контакти</a>
+          <div className="hidden md:flex flex-1 w-full items-center justify-evenly font-sans font-extrabold text-sm tracking-widest uppercase text-white pr-8 lg:pr-16">
+            <a href="#menu" className="hover:text-gray-200 transition-colors cursor-pointer whitespace-nowrap">Послуги</a>
+            <a href="#reviews" className="hover:text-gray-200 transition-colors cursor-pointer whitespace-nowrap">Відгуки</a>
+            <a href="#contacts" className="hover:text-gray-200 transition-colors cursor-pointer whitespace-nowrap">Контакти</a>
           </div>
 
           {/* Logo (Center on mobile and desktop) */}
-          <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-3xl md:text-5xl font-bold text-white tracking-wider cursor-pointer z-50">
+          <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-3xl md:text-5xl font-bold text-white tracking-wider cursor-pointer z-50 whitespace-nowrap">
             <span>DaO Clean</span>
           </div>
 
           {/* Desktop Right Navigation Links & Cart */}
-          <div className="hidden md:flex flex-1 items-center justify-end gap-8 lg:gap-12 font-sans font-extrabold text-sm tracking-widest uppercase text-white z-[60]">
-            <a href="#about" className="hover:text-gray-200 transition-colors cursor-pointer">Про нас</a>
-            <a href="#history" className="hover:text-gray-200 transition-colors cursor-pointer">Як ми працюємо</a>
+          <div className="hidden md:flex flex-1 w-full items-center justify-evenly font-sans font-extrabold text-sm tracking-widest uppercase text-white pl-8 lg:pl-16 z-[60]">
+            <a href="#about" className="hover:text-gray-200 transition-colors cursor-pointer whitespace-nowrap">Про нас</a>
+            <a href="#history" className="hover:text-gray-200 transition-colors cursor-pointer whitespace-nowrap">Як ми працюємо</a>
             <button
               className="flex items-center justify-center hover:text-gray-200 transition-colors cursor-pointer"
               onClick={() => setIsCartOpen(true)}
