@@ -27,10 +27,10 @@ const REVIEWS = [
 ];
 
 const BURGER_IMAGES = [
-  "/coffee-cup.png",
-  "/coffee-cup.png",
-  "/coffee-cup.png",
-  "/coffee-cup.png",
+  "/photo-rubashki1.jpeg",
+  "/photo-rubashki1.jpeg",
+  "/photo-rubashki1.jpeg",
+  "/photo-rubashki1.jpeg",
 ];
 
 export default function ReviewsSection() {
