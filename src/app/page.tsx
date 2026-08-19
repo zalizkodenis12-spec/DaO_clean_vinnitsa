@@ -100,9 +100,7 @@ export default function Home() {
       {/* Hero Section */}
       <div className="relative w-full min-h-[120vh] bg-[#E8F1FA] z-10 flex items-center overflow-hidden">
         {/* Background image */}
-        <div
-          className="absolute inset-0 bg-[url('/hero-shirt.jpeg')] bg-cover bg-center bg-no-repeat"
-        />
+        <div className="absolute inset-0 bg-[url('/hero-shirt.jpeg')] bg-cover bg-center bg-no-repeat" />
         {/* Lighten overlay */}
         <div className="absolute inset-0 bg-white/50" />
         {/* Gradient from left for text readability */}
@@ -110,18 +108,50 @@ export default function Home() {
 
         {/* Content */}
         <div className="relative z-10 w-full max-w-7xl mx-auto px-6 md:px-16 pt-32 pb-16 flex flex-col items-start">
-          <h1 className="text-5xl md:text-7xl xl:text-8xl font-serif font-bold text-[#000000] leading-tight mb-6 max-w-xl">
-            Ваші речі заслуговують на чистоту
-          </h1>
-          <p className="text-lg md:text-2xl text-[#000000]/70 font-medium mb-10 max-w-md leading-relaxed">
-            Виїзна хімчистка меблів, килимів та одягу у Вінниці. Приїжджаємо — і повертаємо речі як нові.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4">
+
+          {/* Badge */}
+          <motion.div
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+            className="flex items-center gap-2 bg-[#0158C4]/10 border border-[#0158C4]/20 text-[#0158C4] text-sm font-bold px-4 py-2 rounded-full mb-6 tracking-wide uppercase"
+          >
+            <span className="w-2 h-2 rounded-full bg-[#0158C4] animate-pulse inline-block" />
+            Вінниця та область • Виїзд за адресою
+          </motion.div>
+
+          {/* Headline */}
+          <motion.h1
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.25 }}
+            className="text-5xl md:text-7xl xl:text-8xl font-serif font-bold text-[#000000] leading-tight mb-6 max-w-2xl"
+          >
+            Звільніть життя від прання та складних плям.
+          </motion.h1>
+
+          {/* Subheadline */}
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.45 }}
+            className="text-lg md:text-2xl text-[#000000]/65 font-medium mb-10 max-w-lg leading-relaxed"
+          >
+            Ми приїжджаємо до вас з усім необхідним — і повертаємо ваші речі бездоганно чистими. Жодних зусиль з вашого боку.
+          </motion.p>
+
+          {/* Buttons */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.6 }}
+            className="flex flex-col sm:flex-row gap-4"
+          >
             <a
-              href="#contacts"
+              href="#menu"
               className="inline-block bg-[#0158C4] hover:bg-[#013A80] text-white px-8 py-4 rounded-full text-lg font-bold shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300"
             >
-              Залишити заявку
+              Проглянути послуги
             </a>
             <a
               href="tel:+380679009315"
@@ -129,7 +159,7 @@ export default function Home() {
             >
               067 900 9315
             </a>
-          </div>
+          </motion.div>
         </div>
       </div>
 
