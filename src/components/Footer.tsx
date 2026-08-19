@@ -19,20 +19,20 @@ export default function Footer() {
         </svg>
       </div>
 
-      <div className="max-w-7xl mx-auto px-6 flex flex-col md:grid md:grid-cols-12 gap-8 md:gap-10 text-center md:text-left mt-2">
+      <div className="max-w-7xl mx-auto px-6 w-full flex flex-col md:grid md:grid-cols-3 md:justify-items-center gap-8 md:gap-10 mt-2">
         
         {/* Logo and brief */}
-        <div className="md:col-span-4 flex flex-col items-center md:items-start mb-6 md:mb-0">
+        <div className="flex flex-col items-center md:items-start text-center md:text-left mb-6 md:mb-0 md:max-w-[280px]">
           <h2 className="text-6xl font-black text-[#FFFFFF] tracking-tighter mb-4 md:mb-6 drop-shadow-sm">AliRo</h2>
-          <p className="text-[#FFFFFF]/80 text-lg leading-relaxed max-w-sm font-medium">
+          <p className="text-[#FFFFFF]/80 text-lg leading-relaxed font-medium">
             Затишна кав'ярня на Вишенці. Смак, який повертає у дитинство.
           </p>
         </div>
 
         {/* Contacts & Socials side-by-side on mobile */}
-        <div className="md:col-span-8 flex flex-row justify-between md:grid md:grid-cols-2 gap-2 md:gap-10 text-left w-full px-2">
+        <div className="flex flex-row justify-between w-full text-left md:contents">
           {/* Contacts */}
-          <div className="flex flex-col items-start w-[48%] md:w-full">
+          <div className="flex flex-col items-start w-[48%] md:w-full md:max-w-[280px]">
             <h3 className="text-lg md:text-2xl font-bold mb-4 md:mb-6 font-serif">Контакти</h3>
             <p className="text-[#FFFFFF]/90 mb-3 text-xs md:text-xl flex items-center gap-2 font-semibold">
               <span className="text-base md:text-2xl">📍</span> вул. Келецька, 84, Вінниця
@@ -43,7 +43,7 @@ export default function Footer() {
           </div>
 
           {/* Socials */}
-          <div className="flex flex-col items-start w-[48%] md:w-full">
+          <div className="flex flex-col items-start w-[48%] md:w-full md:max-w-[280px]">
             <h3 className="text-lg md:text-2xl font-bold mb-4 md:mb-6 font-serif">Слідкуй за нами</h3>
             
             <div className="flex flex-col gap-4 md:gap-5 w-full">
