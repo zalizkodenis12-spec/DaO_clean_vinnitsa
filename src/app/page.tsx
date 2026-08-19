@@ -98,13 +98,15 @@ export default function Home() {
       </div>
 
       {/* Hero Section */}
-      <div className="relative w-full min-h-[100vh] bg-[#E8F1FA] z-10 flex items-center overflow-hidden">
+      <div className="relative w-full min-h-[120vh] bg-[#E8F1FA] z-10 flex items-center overflow-hidden">
         {/* Background image */}
         <div
           className="absolute inset-0 bg-[url('/hero-shirt.jpeg')] bg-cover bg-center bg-no-repeat"
         />
-        {/* Overlay for text readability on left side */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[#E8F1FA]/95 via-[#E8F1FA]/60 to-transparent" />
+        {/* Lighten overlay */}
+        <div className="absolute inset-0 bg-white/50" />
+        {/* Gradient from left for text readability */}
+        <div className="absolute inset-0 bg-gradient-to-r from-white/90 via-white/50 to-transparent" />
 
         {/* Content */}
         <div className="relative z-10 w-full max-w-7xl mx-auto px-6 md:px-16 pt-32 pb-16 flex flex-col items-start">
