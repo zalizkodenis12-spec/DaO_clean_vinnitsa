@@ -96,7 +96,7 @@ export default function Home() {
       </div>
 
       {/* Hero Section - Solid Background */}
-      <div className="relative w-full h-[150vh] bg-[#E8F1FA] z-10">
+      <div className="relative w-full h-[150vh] bg-[#B0D8FF] z-10">
       </div>
 
       {/* The new Menu Section that slides up after the animation finishes */}
