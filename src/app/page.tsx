@@ -9,6 +9,7 @@ import AboutSection from "@/components/AboutSection";
 import ReviewsSection from "@/components/ReviewsSection";
 import Footer from "@/components/Footer";
 import CartSidebar from "@/components/CartSidebar";
+import PageIntro from "@/components/PageIntro";
 
 export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -21,6 +22,7 @@ export default function Home() {
 
   return (
     <main className="relative w-full bg-white">
+      <PageIntro />
       {/* Navbar — classic solid blue */}
       <div className="absolute top-0 left-0 w-full pt-4 pb-6 bg-[#0158C4] z-50">
         <div className="relative z-10 flex items-center w-full px-6 md:px-16">
