@@ -25,8 +25,7 @@ export default function Home() {
       <div className="absolute top-0 left-0 w-full pt-4 pb-6 bg-[#0158C4] z-50">
         <div className="relative z-10 flex items-center w-full px-6 md:px-16">
           {/* Left Navigation Links */}
-          <div className="hidden md:flex flex-1 items-center justify-between pr-12 lg:pr-32 font-sans font-semibold text-sm tracking-widest uppercase text-white">
-            <a href="#" className="hover:text-gray-200 transition-colors cursor-pointer">Головна</a>
+          <div className="hidden md:flex flex-1 items-center justify-between pr-12 lg:pr-32 font-sans font-extrabold text-sm tracking-widest uppercase text-white">
             <a href="#about" className="hover:text-gray-200 transition-colors cursor-pointer">Про нас</a>
             <a href="#history" className="hover:text-gray-200 transition-colors cursor-pointer">Як ми працюємо</a>
           </div>
@@ -37,17 +36,14 @@ export default function Home() {
           </div>
 
           {/* Right Navigation Links */}
-          <div className="hidden md:flex flex-1 items-center justify-between pl-12 lg:pl-32 font-sans font-semibold text-sm tracking-widest uppercase text-white">
+          <div className="hidden md:flex flex-1 items-center justify-between pl-12 lg:pl-32 font-sans font-extrabold text-sm tracking-widest uppercase text-white">
             <a href="#menu" className="hover:text-gray-200 transition-colors cursor-pointer">Послуги</a>
             <a href="#reviews" className="hover:text-gray-200 transition-colors cursor-pointer">Відгуки</a>
-            <div className="flex items-center gap-6 xl:gap-8">
-              <a href="#contacts" className="hover:text-gray-200 transition-colors cursor-pointer">Контакти</a>
-              <button onClick={() => setIsCartOpen(true)} className="hover:text-gray-200 transition-colors cursor-pointer ml-2" aria-label="Кошик">
-                <svg xmlns="http://www.w3.org/2000/svg" className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
-                </svg>
-              </button>
-            </div>
+            <button onClick={() => setIsCartOpen(true)} className="hover:text-gray-200 transition-colors cursor-pointer" aria-label="Кошик">
+              <svg xmlns="http://www.w3.org/2000/svg" className="w-9 h-9" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+              </svg>
+            </button>
           </div>
 
           {/* Mobile Hamburger Icon */}
