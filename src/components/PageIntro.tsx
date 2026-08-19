@@ -18,52 +18,38 @@ export default function PageIntro() {
   return (
     <AnimatePresence>
       {visible && (
-        <div className="fixed inset-0 z-[999] overflow-hidden pointer-events-none">
+        <div className="fixed inset-0 z-[999] overflow-hidden pointer-events-none flex">
 
-          {/* LEFT half — slides out to the LEFT */}
+          {/* LEFT half — slides out completely to the left */}
           <motion.div
-            animate={splitting ? { x: "-100%" } : { x: 0 }}
+            animate={splitting ? { x: "-100vw" } : { x: 0 }}
             transition={{ duration: 1.4, ease: [0.76, 0, 0.24, 1], delay: 0.1 }}
-            className="absolute top-0 left-0 h-full bg-[#0158C4]"
+            className="relative h-full bg-[#0158C4]"
             style={{ width: "50%" }}
           >
-            {/* Vertical wave on the RIGHT edge, sticking out to the right */}
-            <div
-              className="absolute top-0 right-0 h-full"
-              style={{ width: 100, transform: "translateX(100%)" }}
-            >
-              <svg
-                viewBox="0 0 100 1000"
-                preserveAspectRatio="none"
-                style={{ width: "100%", height: "100%" }}
-              >
+            {/* Vertical wave extending exactly 60px to the right of the center */}
+            <div className="absolute top-0 right-[-60px] h-full w-[120px]">
+              <svg viewBox="0 0 120 1000" preserveAspectRatio="none" className="w-full h-full">
                 <path
-                  d="M0,0 C70,150 10,350 50,500 C90,650 10,800 0,1000 L0,1000 L0,0 Z"
+                  d="M60,0 C120,250 0,750 60,1000 L0,1000 L0,0 Z"
                   fill="#0158C4"
                 />
               </svg>
             </div>
           </motion.div>
 
-          {/* RIGHT half — slides out to the RIGHT */}
+          {/* RIGHT half — slides out completely to the right */}
           <motion.div
-            animate={splitting ? { x: "100%" } : { x: 0 }}
+            animate={splitting ? { x: "100vw" } : { x: 0 }}
             transition={{ duration: 1.4, ease: [0.76, 0, 0.24, 1], delay: 0.1 }}
-            className="absolute top-0 right-0 h-full bg-[#0158C4]"
+            className="relative h-full bg-[#0158C4]"
             style={{ width: "50%" }}
           >
-            {/* Vertical wave on the LEFT edge, sticking out to the left */}
-            <div
-              className="absolute top-0 left-0 h-full"
-              style={{ width: 100, transform: "translateX(-100%)" }}
-            >
-              <svg
-                viewBox="0 0 100 1000"
-                preserveAspectRatio="none"
-                style={{ width: "100%", height: "100%" }}
-              >
+            {/* Vertical wave extending exactly 60px to the left of the center */}
+            <div className="absolute top-0 left-[-60px] h-full w-[120px]">
+              <svg viewBox="0 0 120 1000" preserveAspectRatio="none" className="w-full h-full">
                 <path
-                  d="M100,0 C30,150 90,350 50,500 C10,650 90,800 100,1000 L100,1000 L100,0 Z"
+                  d="M60,0 C120,250 0,750 60,1000 L120,1000 L120,0 Z"
                   fill="#0158C4"
                 />
               </svg>
@@ -75,3 +61,4 @@ export default function PageIntro() {
     </AnimatePresence>
   );
 }
+
