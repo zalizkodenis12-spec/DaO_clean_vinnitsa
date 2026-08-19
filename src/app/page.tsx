@@ -25,7 +25,7 @@ export default function Home() {
 
           {/* Logo (Center) */}
           <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-3xl md:text-5xl font-bold text-white tracking-wider cursor-pointer">
-            <span>AliRo</span>
+            <span>DaO Clean</span>
           </div>
 
           {/* Right Navigation Links */}

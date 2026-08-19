@@ -45,7 +45,7 @@ export default function MenuSection() {
 
       <div className="max-w-5xl mx-auto px-6 pt-16 md:pt-24 text-center relative z-10">
         <h2 className="text-5xl md:text-8xl font-extrabold text-white mb-12 md:mb-16 tracking-wide drop-shadow-md">
-          Ознайомтеся з меню AliRo
+          Ознайомтеся з меню DaO Clean
         </h2>
         
         {/* 2 columns grid for both mobile and desktop */}

@@ -17,7 +17,7 @@ export default function HistorySection() {
         </h2>
         <div className="w-16 md:w-24 h-1 bg-[#0158C4] relative z-10 mb-4 md:mb-6"></div>
         <p className="text-[#000000]/80 text-lg md:text-2xl font-medium relative z-10 font-sans text-center px-8">
-          Як з'явилась AliRo
+          Як з'явилась DaO Clean
         </p>
       </div>
 
@@ -44,7 +44,7 @@ export default function HistorySection() {
           className="mb-16 md:mb-[25vh]"
         >
           <span className="text-[#0158C4] font-bold text-xl md:text-2xl tracking-widest uppercase mb-2 md:mb-4 block">2024</span>
-          <h3 className="text-3xl md:text-5xl font-serif font-bold text-[#000000] mb-4 md:mb-6 leading-tight">Перші двері AliRo</h3>
+          <h3 className="text-3xl md:text-5xl font-serif font-bold text-[#000000] mb-4 md:mb-6 leading-tight">Перші двері DaO Clean</h3>
           <p className="text-lg md:text-xl text-[#000000]/80 leading-relaxed font-medium">
             Ми відкрили невеличку кав'ярню на Вишенці. Без пафосу, без зайвого — тільки свіжа кава, домашня випічка і атмосфера в якій хочеться затриматись. Перші гості стали друзями закладу.
           </p>
@@ -59,7 +59,7 @@ export default function HistorySection() {
           <span className="text-[#0158C4] font-bold text-xl md:text-2xl tracking-widest uppercase mb-2 md:mb-4 block">Сьогодні</span>
           <h3 className="text-3xl md:text-5xl font-serif font-bold text-[#000000] mb-4 md:mb-6 leading-tight">Місце для всієї родини</h3>
           <p className="text-lg md:text-xl text-[#000000]/80 leading-relaxed font-medium">
-            AliRo стала тим самим затишним куточком Вінниці, куди приходять цілими родинами. Ми й далі шукаємо найкращі зерна, печемо десерти щоранку і бережемо ту саму домашню атмосферу з першого дня.
+            DaO Clean стала тим самим затишним куточком Вінниці, куди приходять цілими родинами. Ми й далі шукаємо найкращі зерна, печемо десерти щоранку і бережемо ту саму домашню атмосферу з першого дня.
           </p>
         </motion.div>
 

@@ -23,7 +23,7 @@ export default function Footer() {
         
         {/* Logo and brief */}
         <div className="flex flex-col items-center md:items-start text-center md:text-left mb-6 md:mb-0 md:max-w-[280px]">
-          <h2 className="text-6xl font-black text-[#FFFFFF] tracking-tighter mb-4 md:mb-6 drop-shadow-sm">AliRo</h2>
+          <h2 className="text-6xl font-black text-[#FFFFFF] tracking-tighter mb-4 md:mb-6 drop-shadow-sm">DaO Clean</h2>
           <p className="text-[#FFFFFF]/80 text-lg leading-relaxed font-medium">
             Затишна кав'ярня на Вишенці. Смак, який повертає у дитинство.
           </p>
@@ -66,7 +66,7 @@ export default function Footer() {
       </div>
 
       <div className="w-full flex flex-col md:flex-row justify-center items-center gap-2 md:gap-8 text-center text-[#FFFFFF]/60 text-sm mt-12 md:mt-16 pt-8 border-t border-white/20 max-w-7xl mx-auto px-6 font-semibold">
-        <span>© 2026 AliRo. Всі права захищено.</span>
+        <span>© 2026 DaO Clean. Всі права захищено.</span>
         <div className="flex gap-4 mt-2 md:mt-0">
           <Link href="/privacy-policy" className="hover:text-white hover:underline transition-all">Політика конфіденційності</Link>
           <Link href="/terms-of-use" className="hover:text-white hover:underline transition-all">Умови користування</Link>
