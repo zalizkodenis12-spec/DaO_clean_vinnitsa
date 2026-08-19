@@ -83,8 +83,7 @@ export default function Home() {
         {/* Mobile Dropdown Menu */}
         {isMenuOpen && (
           <div className="absolute top-full left-0 w-full bg-[#0158C4] pb-6 px-6 shadow-xl flex flex-col gap-4 font-sans font-semibold text-lg tracking-widest uppercase text-white md:hidden z-50 border-t border-white/10">
-            <a href="#" onClick={() => setIsMenuOpen(false)} className="hover:text-gray-200 transition-colors cursor-pointer block">Головна</a>
-            <a href="#about" onClick={() => setIsMenuOpen(false)} className="hover:text-gray-200 transition-colors cursor-pointer block">Про нас</a>
+            <a href="#about" onClick={() => setIsMenuOpen(false)} className="hover:text-gray-200 transition-colors cursor-pointer block mt-2">Про нас</a>
             <a href="#history" onClick={() => setIsMenuOpen(false)} className="hover:text-gray-200 transition-colors cursor-pointer block">Як ми працюємо</a>
             <a href="#menu" onClick={() => setIsMenuOpen(false)} className="hover:text-gray-200 transition-colors cursor-pointer block">Послуги</a>
             <a href="#reviews" onClick={() => setIsMenuOpen(false)} className="hover:text-gray-200 transition-colors cursor-pointer block">Відгуки</a>
@@ -101,7 +100,7 @@ export default function Home() {
       </div>
 
       {/* Hero Section */}
-      <div className="relative w-full min-h-[130vh] bg-[#E8F1FA] z-10 flex items-center overflow-hidden">
+      <div className="relative w-full min-h-[90vh] md:min-h-[130vh] bg-[#E8F1FA] z-10 flex items-center overflow-hidden">
         {/* Background image */}
         <div className="absolute inset-0 bg-[url('/hero-shirt.jpeg')] bg-cover bg-center bg-no-repeat" />
         {/* Lighten overlay — stronger */}
@@ -110,7 +109,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-r from-white/95 via-white/60 to-transparent" />
 
         {/* Content */}
-        <div className="relative z-10 w-full max-w-7xl mx-auto px-6 md:px-16 py-8 flex flex-col items-start">
+        <div className="relative z-10 w-full max-w-7xl mx-auto px-6 md:px-16 py-8 flex flex-col items-start mt-[80px] md:mt-0">
 
           {/* Headline */}
           <motion.h1
@@ -137,17 +136,17 @@ export default function Home() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.6 }}
-            className="flex flex-col sm:flex-row gap-4"
+            className="flex flex-row flex-wrap gap-2 sm:gap-4 w-full"
           >
             <a
               href="#menu"
-              className="inline-block bg-[#0158C4] hover:bg-[#013A80] text-white px-8 py-4 rounded-full text-lg font-bold shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300"
+              className="flex-1 min-w-[160px] bg-[#0158C4] hover:bg-[#013A80] text-white px-2 sm:px-8 py-3 sm:py-4 rounded-full text-[13px] sm:text-lg font-bold shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 flex items-center justify-center text-center leading-tight"
             >
               Проглянути послуги
             </a>
             <a
               href="tel:+380679009315"
-              className="inline-block bg-white/80 hover:bg-white text-[#0158C4] border-2 border-[#0158C4] px-8 py-4 rounded-full text-lg font-bold shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+              className="flex-1 min-w-[130px] bg-white/80 hover:bg-white text-[#0158C4] border-2 border-[#0158C4] px-2 sm:px-8 py-3 sm:py-4 rounded-full text-[13px] sm:text-lg font-bold shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex items-center justify-center text-center whitespace-nowrap leading-tight"
             >
               067 900 9315
             </a>
