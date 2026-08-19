@@ -85,7 +85,7 @@ export default function AboutSection() {
                    </svg>
                 </div>
                 <h3 className="text-3xl font-bold mb-4 font-serif">Професійне обладнання</h3>
-                <p className="text-xl opacity-80 font-medium">Використовуємо сучасну техніку та сертифіковану хімію для якісного результату.</p>
+                <p className="text-xl opacity-80 font-medium">Сучасна техніка та сертифікована хімія.</p>
               </div>
             </SwiperSlide>
             
@@ -141,7 +141,7 @@ export default function AboutSection() {
                </svg>
             </div>
             <h3 className="text-3xl font-bold mb-4 font-serif">Професійне обладнання</h3>
-            <p className="text-xl opacity-80 font-medium">Використовуємо сучасну техніку та сертифіковану хімію для якісного результату.</p>
+            <p className="text-xl opacity-80 font-medium">Сучасна техніка та сертифікована хімія.</p>
           </motion.div>
           
           {/* Feature 2 */}
