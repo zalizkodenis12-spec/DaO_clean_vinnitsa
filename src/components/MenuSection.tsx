@@ -12,7 +12,7 @@ const COFFEES = [
 
 export default function MenuSection() {
   return (
-    <section id="menu" className="relative w-full bg-[#014CA9] z-20 pb-32">
+    <section id="menu" className="relative w-full bg-[#0264D9] z-20 pb-32">
       {/* Top Smoother Wavy SVG Divider */}
       <div className="absolute top-0 left-0 w-full overflow-hidden leading-none transform -translate-y-[calc(100%-1px)]">
         <svg
@@ -22,7 +22,7 @@ export default function MenuSection() {
         >
           <path
             d="M0,60 C300,120 900,0 1200,60 L1200,120 L0,120 Z"
-            className="fill-[#014CA9]"
+            className="fill-[#0264D9]"
           ></path>
         </svg>
       </div>
@@ -44,7 +44,7 @@ export default function MenuSection() {
       </div>
 
       <div className="max-w-5xl mx-auto px-6 pt-16 md:pt-24 text-center relative z-10">
-        <h2 className="text-5xl md:text-8xl font-extrabold text-[#0A2540] mb-12 md:mb-16 tracking-wide drop-shadow-md">
+        <h2 className="text-5xl md:text-8xl font-extrabold text-[#000000] mb-12 md:mb-16 tracking-wide drop-shadow-md">
           Ознайомтеся з меню AliRo
         </h2>
         
@@ -55,15 +55,15 @@ export default function MenuSection() {
               key={item.id}
               className="group flex flex-col items-center"
             >
-              {/* Light green placeholder */}
-              <div className="w-full aspect-square bg-[#E8F1FA] rounded-3xl shadow-lg mb-4 md:mb-6 transition-transform duration-500 group-hover:scale-105 group-hover:shadow-2xl">
+              {/* Light blue placeholder */}
+              <div className="w-full aspect-square bg-[#B0D8FF] rounded-3xl shadow-lg mb-4 md:mb-6 transition-transform duration-500 group-hover:scale-105 group-hover:shadow-2xl">
               </div>
               
               {/* Text Info */}
-              <h3 className="text-sm sm:text-lg md:text-4xl font-bold text-[#0A2540] transition-colors leading-tight text-center px-1">
+              <h3 className="text-sm sm:text-lg md:text-4xl font-bold text-[#000000] transition-colors leading-tight text-center px-1">
                 {item.name}
               </h3>
-              <p className="text-xs sm:text-base md:text-3xl font-medium text-[#0A2540]/80 mt-1 md:mt-2">
+              <p className="text-xs sm:text-base md:text-3xl font-medium text-[#000000]/80 mt-1 md:mt-2">
                 {item.price}
               </p>
             </div>
@@ -74,7 +74,7 @@ export default function MenuSection() {
         <div className="mt-16 md:mt-24">
           <a 
             href="#catalog" 
-            className="inline-block bg-[#E8F1FA] hover:bg-[#cbe2f8] text-[#0A2540] px-10 py-4 rounded-full text-lg md:text-xl font-bold tracking-wide shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300"
+            className="inline-block bg-[#B0D8FF] hover:bg-[#90C8FF] text-[#000000] px-10 py-4 rounded-full text-lg md:text-xl font-bold tracking-wide shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300"
           >
             Дивитись ще
           </a>
@@ -90,7 +90,7 @@ export default function MenuSection() {
         >
           <path
             d="M0,60 C300,120 900,0 1200,60 L1200,120 L0,120 Z"
-            className="fill-[#014CA9]"
+            className="fill-[#0264D9]"
           ></path>
         </svg>
       </div>
