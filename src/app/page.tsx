@@ -87,6 +87,7 @@ export default function Home() {
             <a href="#contacts" onClick={() => setIsMenuOpen(false)} className="hover:text-[#0158C4] transition-colors">Контакти</a>
           </div>
         )}
+      </div>
 
       {/* Hero Section */}
       <div className="relative w-full min-h-[120vh] bg-[#E8F1FA] z-10 flex items-center overflow-hidden">
