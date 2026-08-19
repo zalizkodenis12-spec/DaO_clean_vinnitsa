@@ -106,7 +106,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-r from-white/95 via-white/60 to-transparent" />
 
         {/* Content */}
-        <div className="relative z-10 w-full max-w-7xl mx-auto px-6 md:px-16 pt-40 pb-16 flex flex-col items-start">
+        <div className="relative z-10 w-full max-w-7xl mx-auto px-6 md:px-16 py-8 flex flex-col items-start">
 
           {/* Headline */}
           <motion.h1
