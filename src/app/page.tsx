@@ -25,7 +25,12 @@ export default function Home() {
       <PageIntro />
       {/* Navbar — classic solid blue */}
       <div className="absolute top-0 left-0 w-full pt-4 pb-6 bg-[#0158C4] z-50">
-        <div className="relative z-10 flex items-center justify-between w-full max-w-[1400px] mx-auto px-6 md:px-16">
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.8, delay: 1.8 }}
+          className="relative z-10 flex items-center justify-between w-full max-w-[1400px] mx-auto px-6 md:px-16"
+        >
           
           {/* Mobile Hamburger Icon */}
           <button
@@ -78,7 +83,7 @@ export default function Home() {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
             </svg>
           </button>
-        </div>
+        </motion.div>
 
         {/* Mobile Dropdown Menu */}
         {isMenuOpen && (
@@ -115,7 +120,7 @@ export default function Home() {
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.2 }}
+            transition={{ duration: 0.7, delay: 1.8 }}
             className="text-5xl md:text-7xl xl:text-8xl font-serif font-bold text-[#000000] leading-tight mb-6 max-w-2xl"
           >
             Звільніть життя від прання.
@@ -125,7 +130,7 @@ export default function Home() {
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.45 }}
+            transition={{ duration: 0.7, delay: 2.0 }}
             className="text-lg md:text-2xl text-[#000000]/65 font-medium mb-10 max-w-lg leading-relaxed"
           >
             Ми приїжджаємо до вас з усім необхідним — і повертаємо ваші речі бездоганно чистими. Жодних зусиль з вашого боку.
@@ -135,18 +140,18 @@ export default function Home() {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.6 }}
+            transition={{ duration: 0.7, delay: 2.2 }}
             className="flex flex-row w-full sm:w-auto gap-2 sm:gap-4"
           >
             <a
               href="#menu"
-              className="flex-1 sm:flex-none inline-block bg-[#0158C4] hover:bg-[#013A80] text-white px-2 sm:px-12 py-3 sm:py-4 rounded-full text-[13px] sm:text-lg font-bold shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 flex items-center justify-center sm:inline-block sm:text-center leading-tight"
+              className="flex-1 sm:flex-none flex items-center justify-center text-center bg-[#0158C4] hover:bg-[#013A80] text-white px-2 sm:px-12 py-3 sm:py-4 rounded-full text-[13px] sm:text-lg font-bold shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 leading-tight"
             >
               Проглянути послуги
             </a>
             <a
               href="tel:+380679009315"
-              className="flex-1 sm:flex-none inline-block bg-white/80 hover:bg-white text-[#0158C4] border-2 border-[#0158C4] px-2 sm:px-12 py-3 sm:py-4 rounded-full text-[13px] sm:text-lg font-bold shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex items-center justify-center sm:inline-block sm:text-center whitespace-nowrap leading-tight"
+              className="flex-1 sm:flex-none flex items-center justify-center text-center whitespace-nowrap bg-white/80 hover:bg-white text-[#0158C4] border-2 border-[#0158C4] px-2 sm:px-12 py-3 sm:py-4 rounded-full text-[13px] sm:text-lg font-bold shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300 leading-tight"
             >
               067 900 9315
             </a>
