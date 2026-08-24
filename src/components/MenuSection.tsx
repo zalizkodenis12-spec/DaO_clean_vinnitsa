@@ -38,68 +38,48 @@ export default function MenuSection() {
         <div className="absolute bottom-[50%] left-[40%] w-64 h-64 rounded-full bg-[#E6AC00] opacity-5"></div>
       </div>
 
-      <div className="max-w-6xl mx-auto px-6 pt-16 md:pt-24 pb-4 relative z-10">
+      <div className="w-full px-6 md:px-16 pt-16 md:pt-24 pb-4 relative z-10">
 
-        {/* Two-column: photo left, text right */}
-        <div className="flex flex-col md:flex-row items-center md:items-start gap-10 md:gap-20">
+        {/* Text — left half of screen */}
+        <motion.div
+          initial={{ opacity: 0, x: -40 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true, margin: "-60px" }}
+          transition={{ duration: 0.7 }}
+          className="flex flex-col text-white max-w-2xl"
+        >
+          <h3 className="text-3xl md:text-5xl font-serif font-bold mb-6 leading-tight drop-shadow-sm">
+            Знайомтесь — власник DaO Clean
+          </h3>
 
-          {/* LEFT — Photo placeholder */}
-          <motion.div
-            initial={{ opacity: 0, x: -40 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, margin: "-60px" }}
-            transition={{ duration: 0.7 }}
-            className="w-full md:w-[520px] shrink-0"
-          >
-            {/* TODO: замінити на реальне фото власника */}
-            <div className="w-full aspect-[4/5] bg-[#FFF3D6] rounded-3xl shadow-2xl overflow-hidden flex items-end justify-center">
-              <svg viewBox="0 0 200 220" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full">
-                <ellipse cx="100" cy="240" rx="110" ry="90" fill="#E6AC00" fillOpacity="0.35" />
-                <circle cx="100" cy="85" r="52" fill="#E6AC00" fillOpacity="0.35" />
-              </svg>
-            </div>
-          </motion.div>
+          <p className="text-lg md:text-xl font-medium opacity-90 mb-10 leading-relaxed">
+            Кожне замовлення я приймаю особисто і несу за нього повну відповідальність — від першого дзвінка до фінального результату. Працюю у сфері хімчистки вже понад 5 років і знаю, як поводитися з будь-яким типом тканини чи забруднення. Я сам виїжджаю до клієнтів, сам підбираю засоби та сам контролюю якість — ніякого перепродажу замовлень стороннім виконавцям. Для мене важливо, щоб кожен клієнт залишився задоволений і повернувся знову.
+          </p>
 
-          {/* RIGHT — Text info */}
-          <motion.div
-            initial={{ opacity: 0, x: 40 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, margin: "-60px" }}
-            transition={{ duration: 0.7, delay: 0.15 }}
-            className="flex flex-col text-white"
-          >
-            <h3 className="text-3xl md:text-5xl font-serif font-bold mb-6 leading-tight drop-shadow-sm">
-              Знайомтесь — власник DaO Clean
-            </h3>
+          <ul className="flex flex-col gap-5">
+            {[
+              "Особисто виїжджає на об'єкти",
+              "Контролює якість кожного замовлення",
+              "Підбирає засоби під тип тканини",
+              "На зв'язку для консультацій",
+            ].map((item, i) => (
+              <motion.li
+                key={i}
+                initial={{ opacity: 0, x: 20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.3 + i * 0.1 }}
+                className="flex items-center gap-4 text-lg md:text-xl font-bold"
+              >
+                <span className="w-3 h-3 rounded-full bg-white shrink-0 shadow-md" />
+                {item}
+              </motion.li>
+            ))}
+          </ul>
+        </motion.div>
 
-            <p className="text-lg md:text-xl font-medium opacity-90 mb-10 leading-relaxed max-w-xl">
-              Кожне замовлення я приймаю особисто і несу за нього повну відповідальність — від першого дзвінка до фінального результату. Працюю у сфері хімчистки вже понад 5 років і знаю, як поводитися з будь-яким типом тканини чи забруднення. Я сам виїжджаю до клієнтів, сам підбираю засоби та сам контролюю якість — ніякого перепродажу замовлень стороннім виконавцям. Для мене важливо, щоб кожен клієнт залишився задоволений і повернувся знову.
-            </p>
-
-            <ul className="flex flex-col gap-5">
-              {[
-                "Особисто виїжджає на об'єкти",
-                "Контролює якість кожного замовлення",
-                "Підбирає засоби під тип тканини",
-                "На зв'язку для консультацій",
-              ].map((item, i) => (
-                <motion.li
-                  key={i}
-                  initial={{ opacity: 0, x: 20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.5, delay: 0.3 + i * 0.1 }}
-                  className="flex items-center gap-4 text-lg md:text-xl font-semibold"
-                >
-                  <span className="w-3 h-3 rounded-full bg-white shrink-0 shadow-md" />
-                  {item}
-                </motion.li>
-              ))}
-            </ul>
-          </motion.div>
-
-        </div>
       </div>
+
 
 
 
