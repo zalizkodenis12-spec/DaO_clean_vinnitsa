@@ -103,7 +103,7 @@ export default function CartSidebar({ isOpen, onClose }: CartSidebarProps) {
                 <p className="text-white/70 text-center mt-10">Кошик порожній</p>
               ) : (
                 items.map((item) => (
-                  <div key={item.id} className="bg-[#E8F1FA] rounded-2xl p-4 shadow-lg flex items-center gap-4">
+                  <div key={item.id} className="bg-[#FFF3D6] rounded-2xl p-4 shadow-lg flex items-center gap-4">
                     {/* Placeholder for item image */}
                     <div className="w-16 h-16 bg-[#0158C4]/10 rounded-xl flex items-center justify-center shrink-0">
                     </div>

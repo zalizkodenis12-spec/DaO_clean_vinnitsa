@@ -105,7 +105,7 @@ export default function Home() {
       </div>
 
       {/* Hero Section */}
-      <div className="relative w-full min-h-[105vh] md:min-h-[130vh] bg-[#E8F1FA] z-10 flex items-center overflow-hidden">
+      <div className="relative w-full min-h-[105vh] md:min-h-[130vh] bg-[#FFF3D6] z-10 flex items-center overflow-hidden">
         {/* Background image */}
         <div className="absolute inset-0 bg-[url('/hero-shirt.jpeg')] bg-cover bg-center bg-no-repeat" />
         {/* Lighten overlay — stronger */}

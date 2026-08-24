@@ -67,7 +67,7 @@ export default function MenuSection() {
               className="group flex flex-col items-center"
             >
               {/* Light blue placeholder */}
-              <div className="w-full aspect-square bg-[#E8F1FA] rounded-3xl shadow-lg mb-4 md:mb-6 transition-transform duration-500 group-hover:scale-105 group-hover:shadow-2xl">
+              <div className="w-full aspect-square bg-[#FFF3D6] rounded-3xl shadow-lg mb-4 md:mb-6 transition-transform duration-500 group-hover:scale-105 group-hover:shadow-2xl">
               </div>
 
               {/* Text Info */}
