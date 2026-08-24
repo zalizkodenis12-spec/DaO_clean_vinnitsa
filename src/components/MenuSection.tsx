@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 export default function MenuSection() {
   return (
-    <section id="menu" className="relative w-full bg-[#FFC107] z-20 pb-32">
+    <section id="menu" className="relative w-full bg-[#FFC107] z-20 pb-32 min-h-[700px] md:min-h-[800px]">
       {/* Top Smoother Wavy SVG Divider */}
       <div className="absolute top-0 left-0 w-full overflow-hidden leading-none transform -translate-y-[calc(100%-1px)]">
         <svg
@@ -38,15 +38,27 @@ export default function MenuSection() {
         <div className="absolute bottom-[50%] left-[40%] w-64 h-64 rounded-full bg-[#E6AC00] opacity-5"></div>
       </div>
 
-      <div className="w-full px-6 md:px-16 pt-16 md:pt-24 pb-4 relative z-10">
+      {/* RIGHT HALF — Photo placeholder (absolute, fills right side) */}
+      <div className="absolute top-0 right-0 w-full md:w-1/2 h-full z-0 hidden md:block">
+        {/* TODO: замінити на реальне фото власника */}
+        <div className="w-full h-full bg-[#FFF3D6] flex items-end justify-center overflow-hidden">
+          <svg viewBox="0 0 400 500" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full object-cover">
+            <ellipse cx="200" cy="600" rx="220" ry="180" fill="#E6AC00" fillOpacity="0.4" />
+            <circle cx="200" cy="190" r="110" fill="#E6AC00" fillOpacity="0.4" />
+          </svg>
+        </div>
+      </div>
 
-        {/* Text — left half of screen */}
+      {/* LEFT HALF — Text content */}
+      <div className="relative z-10 w-full md:w-1/2 px-6 md:px-16 pt-16 md:pt-24 pb-4">
+
+        {/* Text */}
         <motion.div
           initial={{ opacity: 0, x: -40 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, margin: "-60px" }}
           transition={{ duration: 0.7 }}
-          className="flex flex-col text-white max-w-2xl"
+          className="flex flex-col text-white"
         >
           <h3 className="text-3xl md:text-5xl font-serif font-bold mb-6 leading-tight drop-shadow-sm">
             Знайомтесь — власник DaO Clean
@@ -79,6 +91,7 @@ export default function MenuSection() {
         </motion.div>
 
       </div>
+
 
 
 
