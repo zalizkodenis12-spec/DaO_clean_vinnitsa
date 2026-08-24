@@ -67,7 +67,7 @@ export default function CartSidebar({ isOpen, onClose }: CartSidebarProps) {
             animate={{ x: 0 }}
             exit={{ x: "100%" }}
             transition={{ type: "spring", damping: 25, stiffness: 200 }}
-            className="fixed top-0 right-0 w-full max-w-[400px] h-[100dvh] bg-[#0158C4] z-[100] flex flex-col shadow-2xl"
+            className="fixed top-0 right-0 w-full max-w-[400px] h-[100dvh] bg-[#FFC107] z-[100] flex flex-col shadow-2xl"
           >
             {/* Wavy Left Edge */}
             <div className="absolute top-0 left-[-60px] md:left-[-100px] h-full w-[61px] md:w-[101px] overflow-hidden pointer-events-none">
@@ -78,7 +78,7 @@ export default function CartSidebar({ isOpen, onClose }: CartSidebarProps) {
               >
                 <path
                   d="M60,0 C120,300 0,900 60,1200 L120,1200 L120,0 Z"
-                  className="fill-[#0158C4]"
+                  className="fill-[#FFC107]"
                 />
               </svg>
             </div>
@@ -134,7 +134,7 @@ export default function CartSidebar({ isOpen, onClose }: CartSidebarProps) {
             </div>
 
             {/* Footer / Checkout */}
-            <div className="p-6 bg-[#0158C4] border-t border-white/10 relative z-10">
+            <div className="p-6 bg-[#FFC107] border-t border-white/10 relative z-10">
               <div className="flex justify-between items-center mb-6 text-white">
                 <span className="text-lg font-medium opacity-80">Підсумок:</span>
                 <span className="text-3xl font-bold font-serif">{total} ₴</span>
