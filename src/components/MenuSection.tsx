@@ -2,12 +2,8 @@
 
 import { motion } from "framer-motion";
 
-const SERVICES = [
-  { id: 1, name: "Чистка одягу" },
-  { id: 2, name: "Чистка килимів" },
-  { id: 3, name: "Чистка м'яких меблів" },
-  { id: 4, name: "Чистка штор і текстилю" },
-];
+
+
 
 export default function MenuSection() {
   return (
@@ -42,52 +38,80 @@ export default function MenuSection() {
         <div className="absolute bottom-[50%] left-[40%] w-64 h-64 rounded-full bg-[#E6AC00] opacity-5"></div>
       </div>
 
-      <div className="max-w-5xl mx-auto px-6 pt-16 md:pt-24 text-center relative z-10">
+      <div className="max-w-6xl mx-auto px-6 pt-16 md:pt-24 pb-4 relative z-10">
 
-        {/* Animated heading */}
+        {/* Section Heading */}
         <motion.h2
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.7 }}
-          className="text-5xl md:text-8xl font-extrabold text-white mb-12 md:mb-16 tracking-wide drop-shadow-md"
+          className="text-5xl md:text-8xl font-extrabold text-white mb-12 md:mb-20 tracking-wide drop-shadow-md text-center"
         >
-          Ознайомтеся з послугами DaO Clean
+          Про власника
         </motion.h2>
 
-        {/* 2 columns grid for both mobile and desktop */}
-        <div className="grid grid-cols-2 gap-x-4 md:gap-x-12 gap-y-12 md:gap-y-16">
-          {SERVICES.map((item, idx) => (
-            <motion.div
-              key={item.id}
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-60px" }}
-              transition={{ duration: 0.6, delay: idx * 0.12 }}
-              className="group flex flex-col items-center"
-            >
-              {/* Light blue placeholder */}
-              <div className="w-full aspect-square bg-[#FFF3D6] rounded-3xl shadow-lg mb-4 md:mb-6 transition-transform duration-500 group-hover:scale-105 group-hover:shadow-2xl">
-              </div>
+        {/* Two-column: photo left, text right */}
+        <div className="flex flex-col md:flex-row items-center md:items-start gap-10 md:gap-20">
 
-              {/* Text Info */}
-              <h3 className="text-sm sm:text-lg md:text-4xl font-bold text-white transition-colors leading-tight text-center px-1">
-                {item.name}
-              </h3>
-            </motion.div>
-          ))}
-        </div>
-
-        {/* See More Button */}
-        <div className="mt-16 md:mt-24">
-          <a 
-            href="#catalog" 
-            className="inline-block bg-[#E6AC00] hover:bg-[#CC9900] text-white px-10 py-4 rounded-full text-lg md:text-xl font-bold tracking-wide shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300"
+          {/* LEFT — Photo placeholder */}
+          <motion.div
+            initial={{ opacity: 0, x: -40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, margin: "-60px" }}
+            transition={{ duration: 0.7 }}
+            className="w-full md:w-[380px] shrink-0"
           >
-            Дивитись ще
-          </a>
+            {/* TODO: замінити на реальне фото власника */}
+            <div className="w-full aspect-[3/4] bg-[#FFF3D6] rounded-3xl shadow-2xl overflow-hidden flex items-end justify-center">
+              <svg viewBox="0 0 200 220" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full">
+                <ellipse cx="100" cy="240" rx="110" ry="90" fill="#E6AC00" fillOpacity="0.35" />
+                <circle cx="100" cy="85" r="52" fill="#E6AC00" fillOpacity="0.35" />
+              </svg>
+            </div>
+          </motion.div>
+
+          {/* RIGHT — Text info */}
+          <motion.div
+            initial={{ opacity: 0, x: 40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, margin: "-60px" }}
+            transition={{ duration: 0.7, delay: 0.15 }}
+            className="flex flex-col text-white"
+          >
+            <h3 className="text-3xl md:text-5xl font-serif font-bold mb-6 leading-tight drop-shadow-sm">
+              Знайомтесь — власник DaO Clean
+            </h3>
+
+            <p className="text-lg md:text-2xl font-medium opacity-90 mb-10 leading-relaxed max-w-xl">
+              Особисто контролюю якість кожного замовлення та відповідаю за результат. Не просто бізнес — а справа, у яку я вклав душу.
+            </p>
+
+            <ul className="flex flex-col gap-5">
+              {[
+                "Особисто виїжджає на об'єкти",
+                "Контролює якість кожного замовлення",
+                "Підбирає засоби під тип тканини",
+                "На зв'язку для консультацій",
+              ].map((item, i) => (
+                <motion.li
+                  key={i}
+                  initial={{ opacity: 0, x: 20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: 0.3 + i * 0.1 }}
+                  className="flex items-center gap-4 text-lg md:text-xl font-semibold"
+                >
+                  <span className="w-3 h-3 rounded-full bg-white shrink-0 shadow-md" />
+                  {item}
+                </motion.li>
+              ))}
+            </ul>
+          </motion.div>
+
         </div>
       </div>
+
 
       {/* Bottom Smoother Wavy SVG Divider (Flipped Vertically) */}
       <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-none transform translate-y-[calc(100%-1px)] -scale-y-100 z-20">
