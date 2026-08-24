@@ -6,7 +6,7 @@ import 'swiper/css/navigation';
 
 export default function AboutSection() {
   return (
-    <section id="about" className="relative w-full bg-[#FFC107] z-20 pt-16 md:pt-24 pb-16 md:pb-32">
+    <section id="about" className="relative w-full bg-[#FBBF24] z-20 pt-16 md:pt-24 pb-16 md:pb-32">
       
       {/* Top Wave Divider pointing up to HistorySection */}
       <div className="absolute top-0 left-0 w-full overflow-hidden leading-none transform -translate-y-[calc(100%-1px)]">
@@ -17,7 +17,7 @@ export default function AboutSection() {
         >
           <path
             d="M0,60 C300,120 900,0 1200,60 L1200,120 L0,120 Z"
-            className="fill-[#FFC107]"
+            className="fill-[#FBBF24]"
           ></path>
         </svg>
       </div>
@@ -189,7 +189,7 @@ export default function AboutSection() {
         >
           <path
             d="M0,60 C300,120 900,0 1200,60 L1200,120 L0,120 Z"
-            className="fill-[#FFC107]"
+            className="fill-[#FBBF24]"
           ></path>
         </svg>
       </div>

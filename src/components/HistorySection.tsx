@@ -4,13 +4,13 @@ import { motion } from "framer-motion";
 
 export default function HistorySection() {
   return (
-    <section id="history" className="relative w-full bg-[#FFF3D6] z-10 flex flex-col md:flex-row">
+    <section id="history" className="relative w-full bg-[#FEF3C7] z-10 flex flex-col md:flex-row">
       
       {/* Left Side: Header Image (Sticky only on desktop) */}
       <div className="w-full md:w-1/2 h-[40vh] md:h-screen relative md:sticky top-0 bg-[#F9F9F9] flex flex-col items-center justify-center overflow-hidden">
         {/* Light background image */}
         <div className="absolute inset-0 opacity-60 bg-[url('/photo-rubashki4.jpeg')] bg-cover bg-center"></div>
-        <div className="absolute inset-0 bg-[#FFF3D6]/70"></div>
+        <div className="absolute inset-0 bg-[#FEF3C7]/70"></div>
         
         <h2 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-serif font-bold text-[#000000] relative z-10 text-center mb-4 md:mb-6 drop-shadow-sm px-4 whitespace-nowrap">
           Як ми працюємо
@@ -22,7 +22,7 @@ export default function HistorySection() {
       </div>
 
       {/* Right Side: Scrolling Content */}
-      <div className="w-full md:w-1/2 bg-[#FFF3D6] flex flex-col py-16 md:py-[20vh] px-6 md:px-24">
+      <div className="w-full md:w-1/2 bg-[#FEF3C7] flex flex-col py-16 md:py-[20vh] px-6 md:px-24">
         
         <motion.div 
           initial={{ opacity: 0, y: 50 }}
