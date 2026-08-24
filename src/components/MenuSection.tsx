@@ -40,17 +40,6 @@ export default function MenuSection() {
 
       <div className="max-w-6xl mx-auto px-6 pt-16 md:pt-24 pb-4 relative z-10">
 
-        {/* Section Heading */}
-        <motion.h2
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-80px" }}
-          transition={{ duration: 0.7 }}
-          className="text-5xl md:text-8xl font-extrabold text-white mb-12 md:mb-20 tracking-wide drop-shadow-md text-center"
-        >
-          Про власника
-        </motion.h2>
-
         {/* Two-column: photo left, text right */}
         <div className="flex flex-col md:flex-row items-center md:items-start gap-10 md:gap-20">
 
@@ -60,10 +49,10 @@ export default function MenuSection() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-60px" }}
             transition={{ duration: 0.7 }}
-            className="w-full md:w-[380px] shrink-0"
+            className="w-full md:w-[520px] shrink-0"
           >
             {/* TODO: замінити на реальне фото власника */}
-            <div className="w-full aspect-[3/4] bg-[#FFF3D6] rounded-3xl shadow-2xl overflow-hidden flex items-end justify-center">
+            <div className="w-full aspect-[4/5] bg-[#FFF3D6] rounded-3xl shadow-2xl overflow-hidden flex items-end justify-center">
               <svg viewBox="0 0 200 220" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full">
                 <ellipse cx="100" cy="240" rx="110" ry="90" fill="#E6AC00" fillOpacity="0.35" />
                 <circle cx="100" cy="85" r="52" fill="#E6AC00" fillOpacity="0.35" />
@@ -83,8 +72,8 @@ export default function MenuSection() {
               Знайомтесь — власник DaO Clean
             </h3>
 
-            <p className="text-lg md:text-2xl font-medium opacity-90 mb-10 leading-relaxed max-w-xl">
-              Особисто контролюю якість кожного замовлення та відповідаю за результат. Не просто бізнес — а справа, у яку я вклав душу.
+            <p className="text-lg md:text-xl font-medium opacity-90 mb-10 leading-relaxed max-w-xl">
+              Кожне замовлення я приймаю особисто і несу за нього повну відповідальність — від першого дзвінка до фінального результату. Працюю у сфері хімчистки вже понад 5 років і знаю, як поводитися з будь-яким типом тканини чи забруднення. Я сам виїжджаю до клієнтів, сам підбираю засоби та сам контролюю якість — ніякого перепродажу замовлень стороннім виконавцям. Для мене важливо, щоб кожен клієнт залишився задоволений і повернувся знову.
             </p>
 
             <ul className="flex flex-col gap-5">
@@ -111,6 +100,7 @@ export default function MenuSection() {
 
         </div>
       </div>
+
 
 
       {/* Bottom Smoother Wavy SVG Divider (Flipped Vertically) */}
