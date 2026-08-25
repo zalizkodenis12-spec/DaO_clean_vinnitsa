@@ -38,16 +38,16 @@ export default function MenuSection() {
         <div className="absolute bottom-[50%] left-[40%] w-64 h-64 rounded-full bg-[#EAB308] opacity-5"></div>
       </div>
 
-      {/* RIGHT HALF — Photo placeholder (absolute, fills right side) */}
-      <div className="absolute top-0 right-0 w-full md:w-1/2 h-full z-0 hidden md:block">
+      {/* RIGHT HALF — Photo block */}
+      <div className="absolute top-0 right-0 w-full md:w-1/2 h-full z-0 hidden md:flex items-center justify-center p-6 lg:p-12">
         
-        {/* Container for background and floating photo */}
-        <div className="relative w-full h-full bg-[#FEF9C3] flex items-center justify-center overflow-hidden p-8 lg:p-16">
+        {/* The smaller "заглушка" frame that holds the SVG blobs and the photo */}
+        <div className="relative w-full max-w-[450px] aspect-[4/5] bg-[#FEF9C3] rounded-[40px] overflow-hidden flex items-center justify-center shadow-xl p-8">
           
-          {/* Decorative yellow ovals (restored to act as background) */}
-          <svg viewBox="0 0 400 800" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg" className="absolute inset-0 w-full h-full z-0 pointer-events-none">
-            <ellipse cx="200" cy="700" rx="220" ry="300" fill="#EAB308" fillOpacity="0.4" />
-            <circle cx="200" cy="200" r="200" fill="#EAB308" fillOpacity="0.4" />
+          {/* Decorative yellow ovals */}
+          <svg viewBox="0 0 400 500" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg" className="absolute inset-0 w-full h-full z-0 pointer-events-none">
+            <ellipse cx="200" cy="450" rx="220" ry="200" fill="#EAB308" fillOpacity="0.4" />
+            <circle cx="200" cy="120" r="160" fill="#EAB308" fillOpacity="0.4" />
           </svg>
 
           {/* TODO: замінити src на реальне фото власника */}
@@ -55,7 +55,7 @@ export default function MenuSection() {
           <img 
             src="/hero-new.jpeg" 
             alt="Власник DaO Clean" 
-            className="relative z-10 w-full max-w-[320px] lg:max-w-[400px] aspect-square object-cover rounded-[20px] shadow-2xl"
+            className="relative z-10 w-full aspect-square object-cover rounded-[24px] shadow-2xl"
           />
         </div>
       </div>
