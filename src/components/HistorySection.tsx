@@ -15,7 +15,7 @@ export default function HistorySection() {
         <h2 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-serif font-bold text-[#000000] relative z-10 text-center mb-4 md:mb-6 drop-shadow-sm px-4 whitespace-nowrap">
           Як ми працюємо
         </h2>
-        <div className="w-16 md:w-24 h-1 bg-[#E8940F] relative z-10 mb-4 md:mb-6"></div>
+        <div className="w-16 md:w-24 h-1 bg-[#FACC15] relative z-10 mb-4 md:mb-6"></div>
         <p className="text-[#000000]/80 text-lg md:text-2xl font-medium relative z-10 font-sans text-center px-8">
           3 прості кроки
         </p>
@@ -30,7 +30,7 @@ export default function HistorySection() {
           viewport={{ once: false, margin: "-20% 0px -20% 0px" }}
           className="mb-16 md:mb-[25vh]"
         >
-          <span className="text-[#E8940F] font-bold text-xl md:text-2xl tracking-widest uppercase mb-2 md:mb-4 block">01</span>
+          <span className="text-[#FACC15] font-bold text-xl md:text-2xl tracking-widest uppercase mb-2 md:mb-4 block">01</span>
           <h3 className="text-3xl md:text-5xl font-serif font-bold text-[#000000] mb-4 md:mb-6 leading-tight">Заявка</h3>
           <p className="text-lg md:text-xl text-[#000000]/80 leading-relaxed font-medium">
             Залишаєте заявку на сайті або просто телефонуєте нам. Наш менеджер оперативно зв'яжеться з вами, зорієнтує по вартості та допоможе підібрати зручний час для приїзду спеціаліста.
@@ -43,7 +43,7 @@ export default function HistorySection() {
           viewport={{ once: false, margin: "-20% 0px -20% 0px" }}
           className="mb-16 md:mb-[25vh]"
         >
-          <span className="text-[#E8940F] font-bold text-xl md:text-2xl tracking-widest uppercase mb-2 md:mb-4 block">02</span>
+          <span className="text-[#FACC15] font-bold text-xl md:text-2xl tracking-widest uppercase mb-2 md:mb-4 block">02</span>
           <h3 className="text-3xl md:text-5xl font-serif font-bold text-[#000000] mb-4 md:mb-6 leading-tight">Виїзд та обробка</h3>
           <p className="text-lg md:text-xl text-[#000000]/80 leading-relaxed font-medium">
             Майстер приїжджає до вас із необхідним професійним обладнанням та еко-засобами. Залежно від забруднень, ми виконуємо чистку на місці або забираємо речі до цеху для спеціалізованої обробки.
@@ -56,7 +56,7 @@ export default function HistorySection() {
           viewport={{ once: false, margin: "-20% 0px -20% 0px" }}
           className="mb-8 md:mb-[10vh]"
         >
-          <span className="text-[#E8940F] font-bold text-xl md:text-2xl tracking-widest uppercase mb-2 md:mb-4 block">03</span>
+          <span className="text-[#FACC15] font-bold text-xl md:text-2xl tracking-widest uppercase mb-2 md:mb-4 block">03</span>
           <h3 className="text-3xl md:text-5xl font-serif font-bold text-[#000000] mb-4 md:mb-6 leading-tight">Результат</h3>
           <p className="text-lg md:text-xl text-[#000000]/80 leading-relaxed font-medium">
             Після чистки та сушіння ми перевіряємо якість роботи. Ви отримуєте речі у чистому вигляді — без плям і запахів. Гарантуємо дбайливе ставлення до тканин і виконання без зайвих клопотів.

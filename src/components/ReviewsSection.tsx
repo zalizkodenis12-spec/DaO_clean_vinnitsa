@@ -68,7 +68,7 @@ export default function ReviewsSection() {
             initial={{ opacity: 0, scale: 0.8 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
-            className="w-32 h-1.5 bg-[#E8940F] mx-auto rounded-full"
+            className="w-32 h-1.5 bg-[#FACC15] mx-auto rounded-full"
           ></motion.div>
         </div>
 
@@ -101,7 +101,7 @@ export default function ReviewsSection() {
                     
                     <div className="relative z-10">
                       <h4 className="text-2xl font-bold font-serif text-[#000000]">{review.name}</h4>
-                      <p className="text-[#E8940F] font-bold uppercase tracking-widest text-sm mt-2">{review.role}</p>
+                      <p className="text-[#FACC15] font-bold uppercase tracking-widest text-sm mt-2">{review.role}</p>
                     </div>
                     
                     {/* Quote icon background decoration */}
@@ -143,7 +143,7 @@ export default function ReviewsSection() {
               
               <div className="relative z-10">
                 <h4 className="text-2xl font-bold font-serif text-[#000000]">{review.name}</h4>
-                <p className="text-[#E8940F] font-bold uppercase tracking-widest text-sm mt-2">{review.role}</p>
+                <p className="text-[#FACC15] font-bold uppercase tracking-widest text-sm mt-2">{review.role}</p>
               </div>
               
               {/* Quote icon background decoration */}
