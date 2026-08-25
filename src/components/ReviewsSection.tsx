@@ -26,11 +26,11 @@ const REVIEWS = [
   },
 ];
 
-const BURGER_IMAGES = [
-  "/photo-rubashki1.jpeg",
-  "/photo-rubashki1.jpeg",
-  "/photo-rubashki1.jpeg",
-  "/photo-rubashki1.jpeg",
+const BACKGROUND_IMAGES = [
+  "/stool-reviews.jpeg",
+  "/stool-reviews.jpeg",
+  "/stool-reviews.jpeg",
+  "/stool-reviews.jpeg",
 ];
 
 export default function ReviewsSection() {
@@ -45,9 +45,14 @@ export default function ReviewsSection() {
           className="flex gap-16 min-w-max items-center"
         >
           {/* Repeat images a few times to ensure infinite scroll */}
-          {[...BURGER_IMAGES, ...BURGER_IMAGES, ...BURGER_IMAGES, ...BURGER_IMAGES].map((src, i) => (
+          {[...BACKGROUND_IMAGES, ...BACKGROUND_IMAGES, ...BACKGROUND_IMAGES, ...BACKGROUND_IMAGES].map((src, i) => (
             <div key={i} className="w-[250px] h-[250px] md:w-[450px] md:h-[450px] rounded-[2rem] md:rounded-[3rem] overflow-hidden drop-shadow-xl">
-              <img src={src} alt="Burger pattern" className="w-full h-full object-cover" />
+              <img 
+                src={src} 
+                alt="Review pattern" 
+                className="w-full h-full object-cover" 
+                style={{ transform: i % 2 !== 0 ? 'scaleX(-1)' : 'none' }}
+              />
             </div>
           ))}
         </motion.div>
