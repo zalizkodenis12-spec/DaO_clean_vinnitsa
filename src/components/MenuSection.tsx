@@ -42,7 +42,7 @@ export default function MenuSection() {
       <div className="absolute top-0 right-0 w-full md:w-1/2 h-full z-0 hidden md:flex items-center justify-center p-6 lg:p-12">
         
         {/* The smaller "заглушка" frame that holds the SVG blobs and the photo */}
-        <div className="relative w-full max-w-[450px] aspect-[4/5] bg-[#FEF9C3] rounded-[40px] overflow-hidden flex items-center justify-center shadow-xl p-8">
+        <div className="relative w-full max-w-[450px] aspect-[4/5] bg-[#FEF9C3] rounded-[40px] overflow-hidden flex items-center justify-center shadow-xl p-5">
           
           {/* Decorative yellow ovals */}
           <svg viewBox="0 0 400 500" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg" className="absolute inset-0 w-full h-full z-0 pointer-events-none">
@@ -50,13 +50,14 @@ export default function MenuSection() {
             <circle cx="200" cy="120" r="160" fill="#EAB308" fillOpacity="0.4" />
           </svg>
 
-          {/* TODO: замінити src на реальне фото власника */}
-          {/* Floating square photo */}
-          <img 
-            src="/hero-new.jpeg" 
-            alt="Власник DaO Clean" 
-            className="relative z-10 w-full aspect-square object-cover rounded-[24px] shadow-2xl"
-          />
+          {/* TODO: тут має бути тег img з реальним фото власника */}
+          {/* Floating square photo placeholder */}
+          <div className="relative z-10 w-full aspect-square bg-[#FFFFFF]/60 flex flex-col items-center justify-center rounded-[24px] shadow-2xl border-2 border-dashed border-[#EAB308]">
+             <svg className="w-12 h-12 text-[#EAB308] mb-3 opacity-80" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+             </svg>
+             <span className="text-[#EAB308] font-bold text-lg">Фото власника</span>
+          </div>
         </div>
       </div>
 
