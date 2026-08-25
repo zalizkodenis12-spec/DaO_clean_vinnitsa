@@ -33,7 +33,7 @@ export default function HistorySection() {
           <span className="text-[#FACC15] font-bold text-xl md:text-2xl tracking-widest uppercase mb-2 md:mb-4 block">01</span>
           <h3 className="text-3xl md:text-5xl font-serif font-bold text-[#000000] mb-4 md:mb-6 leading-tight">Заявка</h3>
           <p className="text-lg md:text-xl text-[#000000]/80 leading-relaxed font-medium">
-            Залишаєте заявку на сайті або просто телефонуєте нам. Наш менеджер оперативно зв'яжеться з вами, зорієнтує по вартості та допоможе підібрати зручний час для приїзду спеціаліста.
+            Зв'язуєтесь з нами в Instagram, TikTok, Facebook, або просто телефонуєте нам. Ми одразу зв'яжемося з вами, зорієнтуємо по вартості та допоможемо підібрати зручний час для приїзду спеціаліста.
           </p>
         </motion.div>
 
