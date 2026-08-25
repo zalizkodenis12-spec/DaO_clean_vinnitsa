@@ -40,13 +40,26 @@ export default function MenuSection() {
 
       {/* RIGHT HALF — Photo placeholder (absolute, fills right side) */}
       <div className="absolute top-0 right-0 w-full md:w-1/2 h-full z-0 hidden md:block">
-        {/* TODO: замінити на реальне фото власника */}
-        <div className="w-full h-full bg-[#FEF9C3] flex items-end justify-center overflow-hidden">
-          <svg viewBox="0 0 400 800" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full">
-            <ellipse cx="200" cy="700" rx="220" ry="300" fill="#EAB308" fillOpacity="0.4" />
-            <circle cx="200" cy="200" r="200" fill="#EAB308" fillOpacity="0.4" />
-          </svg>
-        </div>
+        
+        {/* SVG clip-path that creates the wavy boundary for the photo */}
+        <svg width="0" height="0" className="absolute">
+          <defs>
+            <clipPath id="owner-shape" clipPathUnits="objectBoundingBox">
+              {/* Bottom ellipse spans exactly from y=50% to y=125% */}
+              <ellipse cx="0.5" cy="0.875" rx="0.55" ry="0.375" />
+              {/* Top ellipse spans exactly from y=0% to y=50% */}
+              <ellipse cx="0.5" cy="0.25" rx="0.5" ry="0.25" />
+            </clipPath>
+          </defs>
+        </svg>
+
+        {/* TODO: замінити src на реальне фото власника (зараз стоїть тестове фото) */}
+        <img 
+          src="/hero-new.jpeg" 
+          alt="Власник DaO Clean" 
+          className="w-full h-full object-cover"
+          style={{ clipPath: "url(#owner-shape)", WebkitClipPath: "url(#owner-shape)" }}
+        />
       </div>
 
       {/* LEFT HALF — Text content */}
