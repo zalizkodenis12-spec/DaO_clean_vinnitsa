@@ -38,26 +38,6 @@ export default function MenuSection() {
         <div className="absolute bottom-[50%] left-[40%] w-64 h-64 rounded-full bg-[#EAB308] opacity-5"></div>
       </div>
 
-      {/* RIGHT HALF — Photo block */}
-      <div className="absolute top-0 right-0 w-full md:w-1/2 h-full z-0 hidden md:flex items-center justify-center p-6 lg:p-12">
-        
-        {/* The smaller "заглушка" frame that holds the SVG blobs and the photo */}
-        <div className="relative w-full max-w-[450px] aspect-[4/5] bg-[#FEF9C3] rounded-[40px] overflow-hidden flex items-center justify-center shadow-xl p-3">
-          
-          {/* Decorative yellow ovals */}
-          <svg viewBox="0 0 400 500" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg" className="absolute inset-0 w-full h-full z-0 pointer-events-none">
-            <ellipse cx="200" cy="450" rx="220" ry="200" fill="#EAB308" fillOpacity="0.4" />
-            <circle cx="200" cy="120" r="160" fill="#EAB308" fillOpacity="0.4" />
-          </svg>
-
-          {/* TODO: тут має бути тег img з реальним фото власника */}
-          {/* Floating square photo placeholder */}
-          <div className="relative z-10 w-full aspect-square bg-[#FFFFFF]/60 flex flex-col items-center justify-center rounded-[24px] shadow-2xl border-2 border-dashed border-[#EAB308]">
-             <span className="text-[#EAB308] font-bold text-2xl uppercase tracking-wider">Фото власника</span>
-          </div>
-        </div>
-      </div>
-
       {/* LEFT HALF — Text content */}
       <div className="relative z-10 w-full md:w-1/2 px-6 md:px-16 pt-16 md:pt-24 pb-4">
 
@@ -69,19 +49,19 @@ export default function MenuSection() {
           transition={{ duration: 0.7 }}
           className="flex flex-col text-white"
         >
-          <h3 className="text-3xl md:text-5xl font-serif font-bold mb-6 leading-tight drop-shadow-sm">
+          <h3 className="text-3xl md:text-5xl font-serif font-bold mb-6 text-center md:text-left leading-tight drop-shadow-sm">
             Знайомтесь — власник DaO Clean
           </h3>
 
-          <p className="text-lg md:text-xl font-medium opacity-90 mb-10 leading-relaxed">
-            Кожне замовлення я приймаю особисто і несу за нього повну відповідальність — від першого дзвінка до фінального результату. Працюю у сфері хімчистки вже понад 5 років і знаю, як поводитися з будь-яким типом тканини чи забруднення. Я сам виїжджаю до клієнтів, сам підбираю засоби та сам контролюю якість — ніякого перепродажу замовлень стороннім виконавцям. Для мене важливо, щоб кожен клієнт залишився задоволений і повернувся знову.
+          <p className="hidden md:block text-lg md:text-xl font-medium opacity-90 mb-10 leading-relaxed">
+            Кожне замовлення я приймаю особисто і несу за нього повну відповідальність — від першого дзвінка до фінального результату. Спеціалізуюся на виїзній хімчистці меблів — диванів, матраців, крісел та килимів. Сам виїжджаю до клієнтів, сам підбираю засоби та сам контролюю якість — ніякого перепродажу замовлень стороннім виконавцям. Понад 5 років у цій справі.
           </p>
 
-          <ul className="flex flex-col gap-5">
+          <ul className="hidden md:flex flex-col gap-5">
             {[
+              "Спеціаліст з хімчистки меблів та килимів",
               "Особисто виїжджає на об'єкти",
               "Контролює якість кожного замовлення",
-              "Підбирає засоби під тип тканини",
               "На зв'язку для консультацій",
             ].map((item, i) => (
               <motion.li
@@ -99,6 +79,26 @@ export default function MenuSection() {
           </ul>
         </motion.div>
 
+      </div>
+
+      {/* RIGHT HALF — Photo block */}
+      <div className="relative md:absolute top-0 right-0 w-full md:w-1/2 h-auto md:h-full z-0 flex items-center justify-center p-6 lg:p-12 pb-16 md:pb-12">
+        
+        {/* The smaller "заглушка" frame that holds the SVG blobs and the photo */}
+        <div className="relative w-full max-w-[450px] aspect-[4/5] bg-[#FEF9C3] rounded-[40px] overflow-hidden flex items-center justify-center shadow-xl p-3">
+          
+          {/* Decorative yellow ovals */}
+          <svg viewBox="0 0 400 500" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg" className="absolute inset-0 w-full h-full z-0 pointer-events-none">
+            <ellipse cx="200" cy="450" rx="220" ry="200" fill="#EAB308" fillOpacity="0.4" />
+            <circle cx="200" cy="120" r="160" fill="#EAB308" fillOpacity="0.4" />
+          </svg>
+
+          {/* TODO: тут має бути тег img з реальним фото власника */}
+          {/* Floating square photo placeholder */}
+          <div className="relative z-10 w-full aspect-square bg-[#FFFFFF]/60 flex flex-col items-center justify-center rounded-[24px] shadow-2xl border-2 border-dashed border-[#EAB308]">
+             <span className="text-[#EAB308] font-bold text-2xl uppercase tracking-wider text-center px-4">Фото власника</span>
+          </div>
+        </div>
       </div>
 
 
