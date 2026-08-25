@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 export default function MenuSection() {
   return (
-    <section id="menu" className="relative w-full bg-[#FBBF24] z-20 pb-32 min-h-[700px] md:min-h-[800px]">
+    <section id="menu" className="relative w-full bg-[#FACC15] z-20 pb-32 min-h-[700px] md:min-h-[800px]">
       {/* Top Smoother Wavy SVG Divider */}
       <div className="absolute top-0 left-0 w-full overflow-hidden leading-none transform -translate-y-[calc(100%-1px)]">
         <svg
@@ -17,34 +17,34 @@ export default function MenuSection() {
         >
           <path
             d="M0,60 C300,120 900,0 1200,60 L1200,120 L0,120 Z"
-            className="fill-[#FBBF24]"
+            className="fill-[#FACC15]"
           ></path>
         </svg>
       </div>
 
       {/* Decorative Background Circles */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none z-0">
-        <div className="absolute top-10 left-[10%] w-32 h-32 rounded-full bg-[#F59E0B] opacity-10"></div>
-        <div className="absolute top-[20%] right-[5%] w-64 h-64 rounded-full bg-[#F59E0B] opacity-5"></div>
-        <div className="absolute top-[40%] left-[2%] w-48 h-48 rounded-full bg-[#F59E0B] opacity-10"></div>
-        <div className="absolute top-[60%] right-[15%] w-80 h-80 rounded-full bg-[#F59E0B] opacity-5"></div>
-        <div className="absolute bottom-[10%] left-[20%] w-96 h-96 rounded-full bg-[#F59E0B] opacity-10"></div>
-        <div className="absolute bottom-[30%] right-[2%] w-40 h-40 rounded-full bg-[#F59E0B] opacity-5"></div>
-        <div className="absolute top-[5%] left-[50%] w-24 h-24 rounded-full bg-[#F59E0B] opacity-10"></div>
-        <div className="absolute top-[80%] left-[5%] w-72 h-72 rounded-full bg-[#F59E0B] opacity-5"></div>
-        <div className="absolute top-[35%] right-[40%] w-56 h-56 rounded-full bg-[#F59E0B] opacity-10"></div>
-        <div className="absolute bottom-[5%] right-[45%] w-48 h-48 rounded-full bg-[#F59E0B] opacity-5"></div>
-        <div className="absolute top-[15%] left-[80%] w-32 h-32 rounded-full bg-[#F59E0B] opacity-10"></div>
-        <div className="absolute bottom-[50%] left-[40%] w-64 h-64 rounded-full bg-[#F59E0B] opacity-5"></div>
+        <div className="absolute top-10 left-[10%] w-32 h-32 rounded-full bg-[#EAB308] opacity-10"></div>
+        <div className="absolute top-[20%] right-[5%] w-64 h-64 rounded-full bg-[#EAB308] opacity-5"></div>
+        <div className="absolute top-[40%] left-[2%] w-48 h-48 rounded-full bg-[#EAB308] opacity-10"></div>
+        <div className="absolute top-[60%] right-[15%] w-80 h-80 rounded-full bg-[#EAB308] opacity-5"></div>
+        <div className="absolute bottom-[10%] left-[20%] w-96 h-96 rounded-full bg-[#EAB308] opacity-10"></div>
+        <div className="absolute bottom-[30%] right-[2%] w-40 h-40 rounded-full bg-[#EAB308] opacity-5"></div>
+        <div className="absolute top-[5%] left-[50%] w-24 h-24 rounded-full bg-[#EAB308] opacity-10"></div>
+        <div className="absolute top-[80%] left-[5%] w-72 h-72 rounded-full bg-[#EAB308] opacity-5"></div>
+        <div className="absolute top-[35%] right-[40%] w-56 h-56 rounded-full bg-[#EAB308] opacity-10"></div>
+        <div className="absolute bottom-[5%] right-[45%] w-48 h-48 rounded-full bg-[#EAB308] opacity-5"></div>
+        <div className="absolute top-[15%] left-[80%] w-32 h-32 rounded-full bg-[#EAB308] opacity-10"></div>
+        <div className="absolute bottom-[50%] left-[40%] w-64 h-64 rounded-full bg-[#EAB308] opacity-5"></div>
       </div>
 
       {/* RIGHT HALF — Photo placeholder (absolute, fills right side) */}
       <div className="absolute top-0 right-0 w-full md:w-1/2 h-full z-0 hidden md:block">
         {/* TODO: замінити на реальне фото власника */}
-        <div className="w-full h-full bg-[#FEF3C7] flex items-end justify-center overflow-hidden">
+        <div className="w-full h-full bg-[#FEF9C3] flex items-end justify-center overflow-hidden">
           <svg viewBox="0 0 400 500" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full object-cover">
-            <ellipse cx="200" cy="600" rx="220" ry="180" fill="#F59E0B" fillOpacity="0.4" />
-            <circle cx="200" cy="190" r="110" fill="#F59E0B" fillOpacity="0.4" />
+            <ellipse cx="200" cy="600" rx="220" ry="180" fill="#EAB308" fillOpacity="0.4" />
+            <circle cx="200" cy="190" r="110" fill="#EAB308" fillOpacity="0.4" />
           </svg>
         </div>
       </div>
@@ -105,7 +105,7 @@ export default function MenuSection() {
         >
           <path
             d="M0,60 C300,120 900,0 1200,60 L1200,120 L0,120 Z"
-            className="fill-[#FBBF24]"
+            className="fill-[#FACC15]"
           ></path>
         </svg>
       </div>

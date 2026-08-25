@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer id="contacts" className="relative w-full bg-[#FBBF24] text-[#FFFFFF] pt-8 pb-12 z-20">
+    <footer id="contacts" className="relative w-full bg-[#FACC15] text-[#FFFFFF] pt-8 pb-12 z-20">
       
       {/* Top Wave Divider pointing up to ReviewsSection */}
       <div className="absolute top-0 left-0 w-full overflow-hidden leading-none transform -translate-y-[calc(100%-1px)] z-20 pointer-events-none">
@@ -14,7 +14,7 @@ export default function Footer() {
         >
           <path
             d="M0,60 C300,120 900,0 1200,60 L1200,120 L0,120 Z"
-            className="fill-[#FBBF24]"
+            className="fill-[#FACC15]"
           ></path>
         </svg>
       </div>
@@ -71,7 +71,7 @@ export default function Footer() {
       </div>
       
       <div className="w-full flex justify-center mt-8 md:mt-16 relative z-10 px-6">
-        <p className="text-white font-black text-sm md:text-xl bg-[#F59E0B] px-6 py-3 md:px-8 md:py-4 rounded-xl md:rounded-2xl inline-block shadow-md text-center tracking-wide">
+        <p className="text-white font-black text-sm md:text-xl bg-[#EAB308] px-6 py-3 md:px-8 md:py-4 rounded-xl md:rounded-2xl inline-block shadow-md text-center tracking-wide">
           Працюємо 24/7
         </p>
       </div>

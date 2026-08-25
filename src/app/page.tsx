@@ -24,7 +24,7 @@ export default function Home() {
     <main className="relative w-full bg-white">
       <PageIntro />
       {/* Navbar — classic solid yellow */}
-      <div className="absolute top-0 left-0 w-full pt-4 pb-6 bg-[#FBBF24] z-50">
+      <div className="absolute top-0 left-0 w-full pt-4 pb-6 bg-[#FACC15] z-50">
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -87,7 +87,7 @@ export default function Home() {
 
         {/* Mobile Dropdown Menu */}
         {isMenuOpen && (
-          <div className="absolute top-full left-0 w-full bg-[#FBBF24] pb-6 px-6 shadow-xl flex flex-col gap-4 font-sans font-semibold text-lg tracking-widest uppercase text-white md:hidden z-50 border-t border-white/10">
+          <div className="absolute top-full left-0 w-full bg-[#FACC15] pb-6 px-6 shadow-xl flex flex-col gap-4 font-sans font-semibold text-lg tracking-widest uppercase text-white md:hidden z-50 border-t border-white/10">
             <a href="#about" onClick={() => setIsMenuOpen(false)} className="hover:text-gray-200 transition-colors cursor-pointer block mt-2">Про нас</a>
             <a href="#history" onClick={() => setIsMenuOpen(false)} className="hover:text-gray-200 transition-colors cursor-pointer block">Як ми працюємо</a>
             <a href="#menu" onClick={() => setIsMenuOpen(false)} className="hover:text-gray-200 transition-colors cursor-pointer block">Послуги</a>
@@ -99,19 +99,19 @@ export default function Home() {
         {/* Bottom Wavy SVG for Navbar */}
         <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-none transform translate-y-[calc(100%-1px)] -scale-y-100">
           <svg viewBox="0 0 1200 120" preserveAspectRatio="none" className="relative block w-full h-[40px] md:h-[60px]">
-            <path d="M0,60 C300,120 900,0 1200,60 L1200,120 L0,120 Z" className="fill-[#FBBF24]"></path>
+            <path d="M0,60 C300,120 900,0 1200,60 L1200,120 L0,120 Z" className="fill-[#FACC15]"></path>
           </svg>
         </div>
       </div>
 
       {/* Hero Section */}
-      <div className="relative w-full min-h-[105vh] md:min-h-[130vh] bg-[#FEF3C7] z-10 flex items-center overflow-hidden">
+      <div className="relative w-full min-h-[105vh] md:min-h-[130vh] bg-[#FEF9C3] z-10 flex items-center overflow-hidden">
         {/* Background image */}
         <div className="absolute inset-0 bg-[url('/hero-shirt.jpeg')] bg-cover bg-center bg-no-repeat" />
         {/* Lighten overlay — stronger */}
-        <div className="absolute inset-0 bg-white/65" />
+        <div className="absolute inset-0 bg-[#FEF9C3]/80" />
         {/* Gradient from left for text readability */}
-        <div className="absolute inset-0 bg-gradient-to-r from-white/95 via-white/60 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#FEF9C3]/95 via-[#FEF9C3]/60 to-transparent" />
 
         {/* Content */}
         <div className="relative z-10 w-full max-w-7xl mx-auto px-6 md:px-16 py-8 flex flex-col items-start mt-[80px] md:mt-0">
@@ -145,13 +145,13 @@ export default function Home() {
           >
             <a
               href="#menu"
-              className="flex-1 sm:flex-none flex items-center justify-center text-center bg-[#FBBF24] hover:bg-[#F59E0B] text-white px-2 sm:px-12 py-3 sm:py-4 rounded-full text-[13px] sm:text-lg font-bold shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 leading-tight"
+              className="flex-1 sm:flex-none flex items-center justify-center text-center bg-[#FACC15] hover:bg-[#EAB308] text-white px-2 sm:px-12 py-3 sm:py-4 rounded-full text-[13px] sm:text-lg font-bold shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 leading-tight"
             >
               Проглянути послуги
             </a>
             <a
               href="tel:+380679009315"
-              className="flex-1 sm:flex-none flex items-center justify-center text-center whitespace-nowrap bg-white/80 hover:bg-white text-[#FBBF24] border-2 border-[#FBBF24] px-2 sm:px-12 py-3 sm:py-4 rounded-full text-[13px] sm:text-lg font-bold shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300 leading-tight"
+              className="flex-1 sm:flex-none flex items-center justify-center text-center whitespace-nowrap bg-white/80 hover:bg-white text-[#FACC15] border-2 border-[#FACC15] px-2 sm:px-12 py-3 sm:py-4 rounded-full text-[13px] sm:text-lg font-bold shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300 leading-tight"
             >
               067 900 9315
             </a>
