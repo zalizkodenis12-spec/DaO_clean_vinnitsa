@@ -42,9 +42,9 @@ export default function MenuSection() {
       <div className="absolute top-0 right-0 w-full md:w-1/2 h-full z-0 hidden md:block">
         {/* TODO: замінити на реальне фото власника */}
         <div className="w-full h-full bg-[#FEF9C3] flex items-end justify-center overflow-hidden">
-          <svg viewBox="0 0 400 500" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full object-cover">
-            <ellipse cx="200" cy="600" rx="220" ry="180" fill="#EAB308" fillOpacity="0.4" />
-            <circle cx="200" cy="190" r="110" fill="#EAB308" fillOpacity="0.4" />
+          <svg viewBox="0 0 400 800" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full">
+            <ellipse cx="200" cy="700" rx="220" ry="300" fill="#EAB308" fillOpacity="0.4" />
+            <circle cx="200" cy="200" r="200" fill="#EAB308" fillOpacity="0.4" />
           </svg>
         </div>
       </div>
