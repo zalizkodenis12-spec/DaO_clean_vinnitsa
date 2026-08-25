@@ -41,25 +41,23 @@ export default function MenuSection() {
       {/* RIGHT HALF — Photo placeholder (absolute, fills right side) */}
       <div className="absolute top-0 right-0 w-full md:w-1/2 h-full z-0 hidden md:block">
         
-        {/* SVG clip-path that creates the wavy boundary for the photo */}
-        <svg width="0" height="0" className="absolute">
-          <defs>
-            <clipPath id="owner-shape" clipPathUnits="objectBoundingBox">
-              {/* Bottom ellipse spans exactly from y=50% to y=125% */}
-              <ellipse cx="0.5" cy="0.875" rx="0.55" ry="0.375" />
-              {/* Top ellipse spans exactly from y=0% to y=50% */}
-              <ellipse cx="0.5" cy="0.25" rx="0.5" ry="0.25" />
-            </clipPath>
-          </defs>
-        </svg>
+        {/* Container for background and floating photo */}
+        <div className="relative w-full h-full bg-[#FEF9C3] flex items-center justify-center overflow-hidden p-8 lg:p-16">
+          
+          {/* Decorative yellow ovals (restored to act as background) */}
+          <svg viewBox="0 0 400 800" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg" className="absolute inset-0 w-full h-full z-0 pointer-events-none">
+            <ellipse cx="200" cy="700" rx="220" ry="300" fill="#EAB308" fillOpacity="0.4" />
+            <circle cx="200" cy="200" r="200" fill="#EAB308" fillOpacity="0.4" />
+          </svg>
 
-        {/* TODO: замінити src на реальне фото власника (зараз стоїть тестове фото) */}
-        <img 
-          src="/hero-new.jpeg" 
-          alt="Власник DaO Clean" 
-          className="w-full h-full object-cover"
-          style={{ clipPath: "url(#owner-shape)", WebkitClipPath: "url(#owner-shape)" }}
-        />
+          {/* TODO: замінити src на реальне фото власника */}
+          {/* Floating square photo */}
+          <img 
+            src="/hero-new.jpeg" 
+            alt="Власник DaO Clean" 
+            className="relative z-10 w-full max-w-[320px] lg:max-w-[400px] aspect-square object-cover rounded-[20px] shadow-2xl"
+          />
+        </div>
       </div>
 
       {/* LEFT HALF — Text content */}
