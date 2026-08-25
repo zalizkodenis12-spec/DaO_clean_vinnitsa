@@ -50,7 +50,7 @@ export default function MenuSection() {
           className="flex flex-col text-white"
         >
           <h3 className="text-3xl md:text-5xl font-serif font-bold mb-6 text-center md:text-left leading-tight drop-shadow-sm">
-            Знайомтесь — власник DaO Clean
+            Знайомтесь — Олег, власник DaO Clean
           </h3>
 
           <p className="hidden md:block text-lg md:text-xl font-medium opacity-90 mb-10 leading-relaxed">

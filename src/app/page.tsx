@@ -105,25 +105,26 @@ export default function Home() {
       </div>
 
       {/* Hero Section */}
-      <div className="relative w-full min-h-[105vh] md:min-h-[130vh] bg-[#FEF9C3] z-10 flex items-center overflow-hidden">
+      <div className="relative w-full min-h-[105vh] md:min-h-[130vh] bg-[#FEF9C3] z-10 flex items-end md:items-center overflow-hidden">
         {/* Background image */}
         <div className="absolute inset-0 bg-[url('/hero-new.jpeg')] bg-cover bg-center bg-no-repeat" />
-        {/* Lighten overlay — stronger on desktop, lighter on mobile for better photo visibility */}
-        <div className="absolute inset-0 bg-[#FEF9C3]/50 md:bg-[#FEF9C3]/80" />
-        {/* Gradient from left for text readability - on mobile, gradient from bottom to top so the center photo is clear */}
-        <div className="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-[#FEF9C3]/100 via-[#FEF9C3]/70 to-transparent" />
+        {/* Overlay — майже прозорий на мобільному, щоб фото було чітко видно */}
+        <div className="absolute inset-0 bg-[#FEF9C3]/15 md:bg-[#FEF9C3]/80" />
+        {/* Gradient — на мобільному тільки знизу під текстом, щоб фото було відкрите */}
+        <div className="absolute inset-0 bg-gradient-to-t from-[#FEF9C3] via-[#FEF9C3]/60 to-transparent md:hidden" style={{ background: 'linear-gradient(to top, #fef9c3 28%, rgba(254,249,195,0.55) 52%, transparent 72%)' }} />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#FEF9C3]/95 via-[#FEF9C3]/60 to-transparent hidden md:block" />
 
         {/* Content */}
-        <div className="relative z-10 w-full max-w-7xl mx-auto px-6 md:px-16 py-8 flex flex-col items-center text-center md:items-start md:text-left mt-[30vh] md:mt-0">
+        <div className="relative z-10 w-full max-w-7xl mx-auto px-6 md:px-16 py-10 md:py-8 flex flex-col items-center text-center md:items-start md:text-left mb-0 md:mb-0">
 
           {/* Headline */}
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 1.8 }}
-            className="text-4xl sm:text-5xl md:text-7xl xl:text-8xl font-serif font-bold text-[#000000] leading-tight mb-6 max-w-2xl drop-shadow-sm"
+            className="text-4xl sm:text-5xl md:text-7xl xl:text-8xl font-serif font-bold text-[#000000] leading-tight mb-4 max-w-xs sm:max-w-sm md:max-w-2xl drop-shadow-sm"
           >
-            Ваші меблі — чисті. Ми приїжджаємо до вас.
+            Зробимо<br className="md:hidden" /> меблі<br className="md:hidden" /> як нові.
           </motion.h1>
 
           {/* Subheadline */}
@@ -131,7 +132,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 2.0 }}
-            className="text-base sm:text-lg md:text-2xl text-[#000000]/80 md:text-[#000000]/65 font-semibold md:font-medium mb-10 max-w-lg leading-relaxed drop-shadow-sm"
+            className="text-base sm:text-lg md:text-2xl text-[#000000]/80 md:text-[#000000]/65 font-semibold md:font-medium mb-8 max-w-xs sm:max-w-sm md:max-w-lg leading-relaxed drop-shadow-sm"
           >
             Виїзна хімчистка диванів, матраців, крісел та килимів. Приїжджаємо самі — жодних зусиль з вашого боку.
           </motion.p>
@@ -141,17 +142,17 @@ export default function Home() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 2.2 }}
-            className="flex flex-col sm:flex-row w-full sm:w-auto gap-4 sm:gap-4 justify-center md:justify-start"
+            className="flex flex-col sm:flex-row w-full sm:w-auto gap-4 justify-center md:justify-start"
           >
             <a
               href="#menu"
-              className="flex-1 sm:flex-none flex items-center justify-center text-center bg-[#FACC15] hover:bg-[#EAB308] text-white px-6 sm:px-12 py-4 sm:py-4 rounded-full text-base sm:text-lg font-bold shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 leading-tight"
+              className="flex-1 sm:flex-none flex items-center justify-center text-center bg-[#FACC15] hover:bg-[#EAB308] text-white px-6 sm:px-12 py-4 rounded-full text-base sm:text-lg font-bold shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 leading-tight"
             >
               Проглянути послуги
             </a>
             <a
               href="tel:+380679009315"
-              className="flex-1 sm:flex-none flex items-center justify-center text-center whitespace-nowrap bg-white/80 hover:bg-white text-[#FACC15] border-2 border-[#FACC15] px-6 sm:px-12 py-4 sm:py-4 rounded-full text-base sm:text-lg font-bold shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300 leading-tight"
+              className="flex-1 sm:flex-none flex items-center justify-center text-center whitespace-nowrap bg-white/80 hover:bg-white text-[#FACC15] border-2 border-[#FACC15] px-6 sm:px-12 py-4 rounded-full text-base sm:text-lg font-bold shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300 leading-tight"
             >
               067 900 9315
             </a>
