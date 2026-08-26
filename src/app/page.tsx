@@ -121,17 +121,17 @@ export default function Home() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 2.2 }}
-            className="flex flex-col sm:flex-row w-full sm:w-auto gap-4 justify-start items-stretch sm:items-center"
+            className="flex flex-row w-full sm:w-auto gap-3 sm:gap-4 justify-start items-center"
           >
             <a
               href="#menu"
-              className="flex-1 sm:flex-none flex items-center justify-center text-center bg-[#FACC15] hover:bg-[#EAB308] text-white px-6 sm:px-12 py-4 rounded-full text-base sm:text-lg font-bold shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 leading-tight"
+              className="flex-1 sm:flex-none flex items-center justify-center text-center bg-[#FACC15] hover:bg-[#EAB308] text-white px-2 sm:px-12 py-3.5 sm:py-4 rounded-full text-[13px] sm:text-base md:text-lg font-bold shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 leading-tight whitespace-nowrap"
             >
               Проглянути послуги
             </a>
             <a
               href="tel:+380679009315"
-              className="flex-1 sm:flex-none flex items-center justify-center text-center whitespace-nowrap bg-white/80 hover:bg-white text-[#FACC15] border-2 border-[#FACC15] px-6 sm:px-12 py-4 rounded-full text-base sm:text-lg font-bold shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300 leading-tight"
+              className="flex-1 sm:flex-none flex items-center justify-center text-center whitespace-nowrap bg-white/80 hover:bg-white text-[#FACC15] border-2 border-[#FACC15] px-2 sm:px-12 py-3.5 sm:py-4 rounded-full text-[13px] sm:text-base md:text-lg font-bold shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300 leading-tight"
             >
               067 900 9315
             </a>
