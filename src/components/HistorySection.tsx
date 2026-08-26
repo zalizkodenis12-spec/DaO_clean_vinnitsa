@@ -33,7 +33,11 @@ export default function HistorySection() {
           <span className="text-[#FACC15] font-bold text-xl md:text-2xl tracking-widest uppercase mb-2 md:mb-4 block">01</span>
           <h3 className="text-3xl md:text-5xl font-serif font-bold text-[#000000] mb-4 md:mb-6 leading-tight">Заявка</h3>
           <p className="text-lg md:text-xl text-[#000000]/80 leading-relaxed font-medium">
-            Зв'язуєтесь з нами в Instagram, TikTok, Facebook, або просто телефонуєте нам. Ми одразу зв'яжемося з вами, зорієнтуємо по вартості та допоможемо підібрати зручний час для приїзду спеціаліста.
+            Зв&apos;язуєтесь з нами в{" "}
+            <a href="https://www.instagram.com/daocleanvinnytsia/" target="_blank" rel="noreferrer" className="no-underline">Instagram</a>,{" "}
+            <a href="https://tiktok.com/@daocleanvinnusya" target="_blank" rel="noreferrer" className="no-underline">TikTok</a>,{" "}
+            <a href="https://www.facebook.com/daocleanvinnytsia" target="_blank" rel="noreferrer" className="no-underline">Facebook</a>,{" "}
+            або просто телефонуєте нам. Ми одразу зв&apos;яжемося з вами, зорієнтуємо по вартості та допоможемо підібрати зручний час для приїзду спеціаліста.
           </p>
         </motion.div>
 
