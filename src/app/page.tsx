@@ -46,7 +46,7 @@ export default function Home() {
 
           {/* Desktop Left Navigation Links */}
           <div className="hidden md:flex flex-1 w-full items-center justify-evenly font-sans font-extrabold text-sm tracking-widest uppercase text-white pr-8 lg:pr-16">
-            <a href="#menu" className="hover:text-gray-200 transition-colors cursor-pointer whitespace-nowrap">Послуги</a>
+            <a href="#menu" className="hover:text-gray-200 transition-colors cursor-pointer whitespace-nowrap">Про власника</a>
             <a href="#reviews" className="hover:text-gray-200 transition-colors cursor-pointer whitespace-nowrap">Відгуки</a>
             <a href="#contacts" className="hover:text-gray-200 transition-colors cursor-pointer whitespace-nowrap">Контакти</a>
           </div>
@@ -86,7 +86,7 @@ export default function Home() {
           <div className="absolute top-full left-0 w-full bg-[#FACC15] pb-6 px-6 shadow-xl flex flex-col gap-4 font-sans font-semibold text-lg tracking-widest uppercase text-white md:hidden z-50 border-t border-white/10">
             <a href="#about" onClick={() => setIsMenuOpen(false)} className="hover:text-gray-200 transition-colors cursor-pointer block mt-2">Про нас</a>
             <a href="#history" onClick={() => setIsMenuOpen(false)} className="hover:text-gray-200 transition-colors cursor-pointer block">Як ми працюємо</a>
-            <a href="#menu" onClick={() => setIsMenuOpen(false)} className="hover:text-gray-200 transition-colors cursor-pointer block">Послуги</a>
+            <a href="#menu" onClick={() => setIsMenuOpen(false)} className="hover:text-gray-200 transition-colors cursor-pointer block">Про власника</a>
             <a href="#reviews" onClick={() => setIsMenuOpen(false)} className="hover:text-gray-200 transition-colors cursor-pointer block">Відгуки</a>
             <a href="#contacts" onClick={() => setIsMenuOpen(false)} className="hover:text-gray-200 transition-colors cursor-pointer block">Контакти</a>
           </div>
