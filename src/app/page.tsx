@@ -56,35 +56,19 @@ export default function Home() {
             <span>DaO Clean</span>
           </div>
 
-          {/* Desktop Right Navigation Links & Cart */}
+          {/* Desktop Right Navigation Links */}
           <div className="hidden md:flex flex-1 w-full items-center justify-evenly font-sans font-extrabold text-sm tracking-widest uppercase text-white pl-8 lg:pl-16 z-[60]">
             <a href="#about" className="hover:text-gray-200 transition-colors cursor-pointer whitespace-nowrap">Про нас</a>
             <a href="#history" className="hover:text-gray-200 transition-colors cursor-pointer whitespace-nowrap">Як ми працюємо</a>
-            <button
-              className="flex items-center justify-center text-white/70 cursor-default"
-              aria-label="Кошик"
-            >
-              <svg xmlns="http://www.w3.org/2000/svg" className="w-9 h-9" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
-              </svg>
-            </button>
-          </div>
-
-          {/* Mobile Cart Icon */}
-          <div
-            className="md:hidden ml-auto flex items-center justify-center p-2 -mr-2 text-white/70 z-[60] relative"
-            aria-label="Кошик"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
-            </svg>
+            <a href="#" className="hover:text-gray-200 transition-colors cursor-pointer whitespace-nowrap">Головна</a>
           </div>
         </motion.div>
 
         {/* Mobile Dropdown Menu */}
         {isMenuOpen && (
           <div className="absolute top-full left-0 w-full bg-[#FACC15] pb-6 px-6 shadow-xl flex flex-col gap-4 font-sans font-semibold text-lg tracking-widest uppercase text-white md:hidden z-50 border-t border-white/10">
-            <a href="#about" onClick={() => setIsMenuOpen(false)} className="hover:text-gray-200 transition-colors cursor-pointer block mt-2">Про нас</a>
+            <a href="#" onClick={() => setIsMenuOpen(false)} className="hover:text-gray-200 transition-colors cursor-pointer block mt-2">Головна</a>
+            <a href="#about" onClick={() => setIsMenuOpen(false)} className="hover:text-gray-200 transition-colors cursor-pointer block">Про нас</a>
             <a href="#history" onClick={() => setIsMenuOpen(false)} className="hover:text-gray-200 transition-colors cursor-pointer block">Як ми працюємо</a>
             <a href="#menu" onClick={() => setIsMenuOpen(false)} className="hover:text-gray-200 transition-colors cursor-pointer block">Про власника</a>
             <a href="#reviews" onClick={() => setIsMenuOpen(false)} className="hover:text-gray-200 transition-colors cursor-pointer block">Відгуки</a>
