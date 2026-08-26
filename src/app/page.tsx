@@ -86,12 +86,12 @@ export default function Home() {
 
       {/* Hero Section */}
       <div className="relative w-full min-h-[100vh] md:min-h-[130vh] bg-[#FEF9C3] z-10 flex items-center overflow-hidden pt-16 md:pt-0">
-        {/* Background image */}
-        <div className="absolute inset-0 bg-[url('/hero-new.jpeg')] bg-cover bg-center bg-no-repeat" />
+        {/* Background image — on mobile focused on armchair (78% center), on desktop centered */}
+        <div className="absolute inset-0 bg-[url('/hero-new.jpeg')] bg-cover bg-[position:78%_center] md:bg-center bg-no-repeat" />
         {/* Lighten overlay */}
-        <div className="absolute inset-0 bg-[#FEF9C3]/50 md:bg-[#FEF9C3]/80" />
+        <div className="absolute inset-0 bg-[#FEF9C3]/40 md:bg-[#FEF9C3]/80" />
         {/* Gradient from left for text readability */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[#FEF9C3]/95 via-[#FEF9C3]/60 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#FEF9C3]/95 via-[#FEF9C3]/50 to-transparent" />
 
         {/* Content */}
         <div className="relative z-10 w-full max-w-7xl mx-auto px-6 md:px-16 py-8 flex flex-col items-start text-left">
