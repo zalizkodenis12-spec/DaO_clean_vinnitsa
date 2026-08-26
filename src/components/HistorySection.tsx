@@ -36,7 +36,7 @@ export default function HistorySection() {
             Зв&apos;язуєтесь з нами в{" "}
             <a href="https://www.instagram.com/daocleanvinnytsia/" target="_blank" rel="noreferrer" className="no-underline">Instagram</a>,{" "}
             <a href="https://tiktok.com/@daocleanvinnusya" target="_blank" rel="noreferrer" className="no-underline">TikTok</a>,{" "}
-            <a href="https://www.facebook.com/daocleanvinnytsia" target="_blank" rel="noreferrer" className="no-underline">Facebook</a>,{" "}
+            <a href="https://www.facebook.com/profile.php?id=100082972707101" target="_blank" rel="noreferrer" className="no-underline">Facebook</a>,{" "}
             або просто телефонуєте нам. Ми одразу зв&apos;яжемося з вами, зорієнтуємо по вартості та допоможемо підібрати зручний час для приїзду спеціаліста.
           </p>
         </motion.div>
